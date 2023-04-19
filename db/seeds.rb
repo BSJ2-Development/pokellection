@@ -252,7 +252,3 @@ user1_pokemon.each do |pokemon|
   p "created: #{pokemon}"
 end
 
-# user2_pokemon.each do |pokemon|
-#   user2.pokemon.create(pokemon)
-#   p "created: #{pokemon}"
-# end
