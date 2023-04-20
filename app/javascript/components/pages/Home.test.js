@@ -19,6 +19,7 @@ describe ("<Home />", () => {
     const welcome = screen.getByText('Welcome to Pokellection')
     expect(welcome).toBeInTheDocument()
   })
+
   it("renders images in the carousel", () => {
     homeRender()
     const image1 = screen.getByRole('img', {
@@ -62,6 +63,7 @@ describe ("<Home />", () => {
       })
       expect(image10).toBeInTheDocument()
   })
+  
   it("shows a description of the app", () => {
     homeRender()
     const description = screen.getByText(
