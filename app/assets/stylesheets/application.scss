@@ -1,2 +1,107 @@
 @import "bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+// Color Sheme
+// #eee1bc
+// #ddb57d
+// #ad764e
+// #342316
+// #ea7ba2
+
+
+// Homepage
+body{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color:#eee1bc;
+    border:dotted;
+    border-color: #342316;
+}
+.welcome_homepage{
+    margin-top: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+.carousel-content{
+    background-color:#ddb57d ;
+    height: 400px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "pokefont";
+    display: flex;
+    justify-self: center;
+    border:dotted;
+    border-color: #342316;
+}
+
+.carousel-inner{
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+.ptagonhomepage{
+    padding-left:40px ;
+    padding-right: 40px ;
+    margin-top: 50px;
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;  
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+.getstartbutton{
+margin-bottom: 20px;
+margin-top: 20px;
+background-color: #ea7ba2;
+border:dotted;
+border-color: #342316;
+text-align: center ;
+padding-top: 5px;
+border-radius: 30px;
+}
+.homepage_description{
+    background-color: #ddb57d;
+    padding-left:40px ;
+    padding-right: 40px ;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-bottom: 140px;
+    font-size: 1rem;
+    font-family: "pokefont";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    border:dotted;
+    border-color: #342316;
+}
+
+
+
+
+
+
+// About Us page
+
+
+
+
+
+
+
+
+
+
+//Header 
+
+
+
+
+
+
+
+
+// Footer
