@@ -1,23 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Header from "./components/Header"
 import Home from './pages/Home'
+import Footer from "./components/Footer"
+import AboutUs from "./pages/AboutUs"
 
-const App = ({
-  logged_in,
-  current_user,
-  new_user_route,
-  sign_in_route,
-  sign_out_route
-}) => {
+const App = (props) => {
   return (
     <>
       <BrowserRouter>
+      <Header {...props}/>
         <Routes>
-          <Route path="/" element={<Home /> }/>
+          <Route path='/' element={<Home />} />
+          <Route path='/AboutUs' element={<AboutUs />} />
         </Routes>
+        <Footer />
       </BrowserRouter> 
     </>
   )
 }
 
-export default App;
+export default App
