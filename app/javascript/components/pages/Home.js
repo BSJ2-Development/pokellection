@@ -9,7 +9,9 @@ import {
 
 const items = [
   {
+    className:"images",
     src: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg',
+    
     altText: 'bulbasaur',
     caption: 'bulbasaur',
     key: 1,
@@ -109,8 +111,8 @@ const Home = ()  => {
   
   return (
     <>
-      <h1>Welcome to Pokellection</h1>
-      <button>Get Started Now!</button>
+      <h1 className='welcome_homepage'>Welcome to Pokellection</h1>
+      <button className='getstartbutton'>Get Started Now!</button>
       <Carousel className='carousel-content'
       activeIndex={activeIndex}
       next={next}
@@ -133,10 +135,11 @@ const Home = ()  => {
           onClickHandler={next}
           />
       </Carousel>
-
-      <p>
+    <div className='homepage_description'> 
+      <p className='ptagonhomepage'>
       With Pokellection, you can manage your entire collection of Pokemon across all platforms. From the video games, to the card game or even the action figures you have on your shelf. By creating new cards for each Pokemon within your collection, you can add to the Pokellection Pokedex for everyone to see. When you log in, you can enjoy checking out the cards that everyone has contributed, but you can only modify the listings that you have added yourself.
-      </p>
+      </p> 
+    </div>
     </>
   );
 }
