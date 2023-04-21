@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-// Color Sheme
+// Color Scheme
 // #eee1bc
 // #ddb57d
 // #ad764e
@@ -15,13 +15,13 @@ body{
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     background-color:#eee1bc;
-    border:dotted;
-    border-color: #342316;
 }
+
 .welcome_homepage{
     margin-top: 50px;
     font-family: 'Press Start 2P', cursive;
 }
+
 .carousel-content{
     background-color:#ddb57d ;
     height: 400px;
@@ -41,6 +41,7 @@ body{
     align-items: center;
     height: 400px;
 }
+
 .carousel-item img {
     object-fit: contain;
     height: 300px;
@@ -57,16 +58,18 @@ body{
     font-style: normal;
     text-align: center;
 }
+
 .getstartbutton{
-margin-bottom: 20px;
-margin-top: 20px;
-background-color: #ea7ba2;
-border:dotted;
-border-color: #342316;
-text-align: center ;
-padding-top: 5px;
-border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #ea7ba2;
+    border:dotted;
+    border-color: #342316;
+    text-align: center ;
+    padding-top: 5px;
+    border-radius: 30px;
 }
+
 .homepage_description{
     background-color: #ddb57d;
     padding-left:40px ;
@@ -84,35 +87,33 @@ border-radius: 30px;
     border-color: #342316;
 }
 
-
-
-
-
-
 // About Us page
 
-
-
-
-
-
-
-
+.linkedIn {
+    max-height: 100px;
+    max-width: 100px;
+}
 
 
 //Header 
-
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ad764e;
+    border:dotted;
+    border-color: #342316;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 80%;
+}
 
 .nav_bar_item.nav-item{
     display: flex;
-    // align-self: center;
-    justify-content: center;
-    
-  
-   
-
-   
+    justify-content: center;  
 }
+
 .nav_bar_item{
     display: flex;
     justify-content: space-evenly;
@@ -133,15 +134,28 @@ border-radius: 30px;
     // flex: 1;
    
 }
-.nav_links{
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.nav_links {
     color: black;
     align-self: center;
-   
  }
 
-
-
-
-
-
 // Footer
+.footer-container {
+    display: flex;
+    background-color: #342316;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border:dotted;
+    border-color: #342316;
+}
+
+.footer-text {
+    color: white;
+}
