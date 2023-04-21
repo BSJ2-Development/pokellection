@@ -89,9 +89,80 @@ body{
 
 // About Us page
 
-.linkedIn {
+.about-us-header {
+    margin-top: 90px;
+}
+
+.about-us-container{
+    background-color: #ddb57d;
+    border:dotted;
+    border-color: #342316;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 35px;
+}
+
+.squares-container-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.squares-container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.linked-in-right {
     max-height: 100px;
     max-width: 100px;
+    margin-left: 75%;
+}
+
+.linked-in-left {
+    max-height: 100px;
+    max-width: 100px;
+    margin-right: 75%;
+}
+
+.about-me-images-container {
+    height: 30vh;
+}
+
+.brandon-self-image {
+    
+    width: 275px;
+    height: 275px;
+    margin-right: 75%;
+    border:dotted;
+    border-color: #342316;
+    border-radius: 10px;
+}
+
+.simon-self-image {
+    height: 250px;
+    width: 250px;
+    margin-left: 75%;
+    border:dotted;
+    border-color: #342316;
+    border-radius: 10px;
+}
+
+.josh-self-image {
+    width: 250px;
+    height: 325px;
+    margin-right: 75%;
+    border:dotted;
+    border-color: #342316;
+    border-radius: 10px;
+}
+
+.jacob-self-image {
+    width: 250px;
+    height: 325px;
+    margin-left: 75%;
+    border:dotted;
+    border-color: #342316;
+    border-radius: 10px;
 }
 
 
@@ -158,4 +229,32 @@ a:active { text-decoration: none; }
 
 .footer-text {
     color: white;
+}
+
+// not found
+.not-found-container {
+    margin-top: 90px;
+}
+
+.not-found-header {
+    font-size: xx-large;
+}
+
+.not-found-image {
+    border: dotted;
+    border-color: #342316;
+    margin-top: 10px;
+}
+
+.home-page-button {
+    padding-top: 5px;
+    margin-top: 20px;
+    border: dotted;
+    border-color: #342316;
+    background-color: #ea7ba2;
+    border-radius: 10px;
+}
+
+.home-page-button-text {
+    color: black;
 }
