@@ -808,4 +808,33 @@ RSpec.describe "Pokemons", type: :request do
       expect(json['user_id']).to include "can't be blank"
     end
   end
+
+  describe "DELETE /destroy" do
+    it "deletes a pokemon" do
+      pokemon_params = {
+        pokemon: {
+          pokemon_name: 'Test', 
+          pokemon_nickname: 'test nickname', 
+          pokemon_type: 'poison', 
+          pokedex_entry: 4, 
+          pokemon_version: 'green', 
+          height: 45, 
+          weight: 5.7, 
+          hp: 60, 
+          ability: 'scratch', 
+          image:'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg',
+          user_id: user.id
+        }
+      }
+
+      post "/pokemons", params: pokemon_params
+
+      pokemon = Pokemon.first
+      pokemons = Pokemon.all
+      
+      delete "/pokemons/#{pokemon.id}"
+      expect(response).to have_http_status(200)
+      expect(pokemons).to be_empty
+    end
+  end
 end
