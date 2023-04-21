@@ -808,7 +808,6 @@ RSpec.describe "Pokemons", type: :request do
       expect(json['user_id']).to include "can't be blank"
     end
   end
-
   describe "DELETE /destroy" do
     it "deletes a pokemon" do
       pokemon_params = {
