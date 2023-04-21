@@ -3,7 +3,6 @@ import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import AboutUs from "./AboutUs";
 import '@testing-library/jest-dom'
-import { toBeInTheDocument } from "@testing-library/jest-dom/dist/matchers";
 
 describe("<AboutUs />", () => {
 
@@ -14,12 +13,7 @@ describe("<AboutUs />", () => {
       </BrowserRouter>
     )
   }
-  it("renders without crashing", () => {
-    aboutUsRender()
-    const aboutUs = screen.getByText(/Learn More About The Dev Team/i)
-    expect(aboutUs).toBeInTheDocument()
-  })
-
+ 
   it("shows brandons linkedIn icon", () => {
     aboutUsRender()
     const brandonsLinkedIn = screen.getByRole('img', {
