@@ -48,6 +48,8 @@ const Home = ()  => {
 
   return (
     <>
+    <br></br>
+    <br></br>
       <h1 className='welcome_homepage'>Welcome to Pokellection</h1>
       <button className='getstartbutton'>Get Started Now!</button>
       <Carousel className='carousel-content'

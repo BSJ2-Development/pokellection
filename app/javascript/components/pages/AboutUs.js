@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <>
       <h1>Learn More About The Dev Team!</h1>
-        <a href='https://www.linkedin.com/in/brandon-ray95/' target="_blank"> <img src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='brandons linked in logo'></img></a>
+        <a href='https://www.linkedin.com/in/brandon-ray95/' target="_blank"> <img className='linkedIn' src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='brandons linked in logo'></img></a>
           <div className='squares-container-left-side'>
             <div className='squares'>
               {/* images will go here */}
@@ -19,7 +19,7 @@ const AboutUs = () => {
       </div> 
 
       <div className='squares-container-right-side'>
-      <a href='https://www.linkedin.com/in/sdcurry3/' target="_blank"> <img src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='simons linked in logo'></img></a>
+      <a href='https://www.linkedin.com/in/sdcurry3/' target="_blank"> <img className='linkedIn' src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='simons linked in logo'></img></a>
           <div className='squares'>
             {/* images will go here */}
             <div className='Simon-about-me'> 
@@ -29,7 +29,7 @@ const AboutUs = () => {
       </div> 
 
       <div className='squares-container-left-side'>
-      <a href='https://www.linkedin.com/in/maurer-joshua/' target="_blank"> <img src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='joshs linked in logo'></img></a>
+      <a href='https://www.linkedin.com/in/maurer-joshua/' target="_blank"> <img className='linkedIn' src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='joshs linked in logo'></img></a>
         <div className='squares'>
           {/* images will go here */}
           <div className='Josh-about-me'> 
@@ -39,7 +39,7 @@ const AboutUs = () => {
       </div> 
 
       <div className='squares-container-right-side'>
-      <a href='https://www.linkedin.com/in/jacob-ross96/' target="_blank"> <img src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='jacobs linked in logo'></img></a>
+      <a href='https://www.linkedin.com/in/jacob-ross96/' target="_blank"> <img className='linkedIn' src='https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png' alt='jacobs linked in logo'></img></a>
           <div className='squares'>
             {/* images will go here */}
             <div className='Jacob-about-me'> 
