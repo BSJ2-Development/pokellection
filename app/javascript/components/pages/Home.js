@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import items from '../components/Items';
+import { NavLink } from 'react-router-dom'
 import {
   Carousel,
   CarouselItem,
@@ -49,7 +50,11 @@ const Home = ()  => {
   return (
     <>
       <h1>Welcome to Pokellection</h1>
-      <button>Get Started Now!</button>
+      <button>
+        <NavLink to='/pokemonindex'>
+          Get Started Now!
+        </NavLink>
+      </button>
       <Carousel className='carousel-content'
       activeIndex={activeIndex}
       next={next}
