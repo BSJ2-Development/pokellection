@@ -16,16 +16,16 @@ const NewPokemon = ({ current_user, createPokemons}) => {
   const nav = useNavigate()
   
   const [myPokemon, setMyPokemon] = useState({
-    pokemon_name: '', 
-    pokemon_nickname: '', 
-    pokemon_type: '', 
-    pokedex_entry: '', 
-    pokemon_version: '', 
-    height: '', 
-    weight: '', 
-    hp: '', 
-    ability: '', 
-    image: '',
+    pokemon_name: "", 
+    pokemon_nickname: "", 
+    pokemon_type: "", 
+    pokedex_entry: "", 
+    pokemon_version: "", 
+    height: "", 
+    weight: "", 
+    hp: "", 
+    ability: "", 
+    image: "",
     user_id: current_user?.id
   })
 
@@ -34,8 +34,10 @@ const NewPokemon = ({ current_user, createPokemons}) => {
   }
 
   const handleSubmit = () => {
+    console.log(handleSubmit)
     createPokemons(myPokemon)
-    nav('/mypokemon')
+    nav('/mycollection')
+    console.log(myPokemon)
   }
 
   return (
@@ -43,12 +45,12 @@ const NewPokemon = ({ current_user, createPokemons}) => {
       <Form>
 
       <FormGroup>
-          <Label for="pokedex-number">
+          <Label for="pokedex_entry">
             Pokemon No:
           </Label>
             <Input
-              id='pokedex-number'
-              name="pokedex-number"
+              id='pokedex_entry'
+              name="pokedex_entry"
               placeholder="Add your Pokedex number here"
               type="number"
               onChange={handleChange}
@@ -56,12 +58,12 @@ const NewPokemon = ({ current_user, createPokemons}) => {
         </FormGroup>
 
         <FormGroup>
-          <Label for="pokemon-name">
+          <Label for="pokemon_name">
             Pokemon Name:
           </Label>
             <Input
-              id='pokemon-name'
-              name="pokemon-name"
+              id='pokemon_name'
+              name="pokemon_name"
               placeholder="Add your Pokemon's name here"
               type="text"
               onChange={handleChange}
@@ -69,12 +71,12 @@ const NewPokemon = ({ current_user, createPokemons}) => {
         </FormGroup>
 
         <FormGroup>
-          <Label for="pokemon-nickname">
+          <Label for="pokemon_nickname">
             Pokemon Nickname:
           </Label>
             <Input
-              id='pokemon-nickname'
-              name="pokemon-nickname"
+              id='pokemon_nickname'
+              name="pokemon_nickname"
               placeholder="Add your Pokemon's nickname here"
               type="text"
               onChange={handleChange}
@@ -82,12 +84,25 @@ const NewPokemon = ({ current_user, createPokemons}) => {
         </FormGroup>
 
         <FormGroup>
-          <Label for="pokemon-hp">
+          <Label for="pokemon_type">
+            Pokemon Type:
+          </Label>
+            <Input
+              id='pokemon_type'  
+              name="pokemon_type"
+              placeholder="Add your Pokemon's type here"
+              type="text"
+              onChange={handleChange}
+            />
+        </FormGroup>
+
+        <FormGroup>
+          <Label for="hp">
             Pokemon's HP:
           </Label>
             <Input
-              id='pokemon-hp'
-              name="pokemon-hp"
+              id='hp'
+              name="hp"
               placeholder="Add your Pokemon's HP here"
               type="number"
               onChange={handleChange}
@@ -95,12 +110,12 @@ const NewPokemon = ({ current_user, createPokemons}) => {
         </FormGroup>
         
         <FormGroup>
-          <Label for="pokemon-height">
+          <Label for="height">
             Pokemon's Height:
           </Label>
             <Input
-              id='pokemon-height' 
-              name="pokemon-height"
+              id='height' 
+              name="height"
               placeholder="Add your Pokemon's height here"
               type="number"
               onChange={handleChange}
@@ -108,12 +123,12 @@ const NewPokemon = ({ current_user, createPokemons}) => {
         </FormGroup>
 
         <FormGroup>
-          <Label for="pokemon-weight">
+          <Label for="weight">
             Pokemon's Weight:
           </Label>
             <Input
-              id='pokemon-weight' 
-              name="pokemon-weight"
+              id='weight' 
+              name="weight"
               placeholder="Add your Pokemon's weight here"
               type="number"
               onChange={handleChange}
@@ -121,18 +136,31 @@ const NewPokemon = ({ current_user, createPokemons}) => {
         </FormGroup>
 
         <FormGroup>
-          <Label for="pokemon-ability">
+          <Label for="ability">
             Pokemon Ability:
           </Label>
             <Input
-              id='pokemon-ability'
-              name="pokemon-ability"
+              id='ability'
+              name="ability"
               placeholder="Add your Pokemon's name here"
               type="text"
               onChange={handleChange}
             />
         </FormGroup>
 
+        <FormGroup>
+          <Label for="pokemon_version">
+            Pokemon's version:
+          </Label>
+            <Input
+              id='pokemon_version'
+              name="pokemon_version"
+              placeholder="Add your Pokemon's version here"
+              type="text"
+              onChange={handleChange}
+            />
+        </FormGroup>
+        
         <FormGroup>
           <Label for="image">
             Image URL
