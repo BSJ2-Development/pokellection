@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, NavLink } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
-const showPokemon = ({ pokemons }) => {
+const ShowPokemon = ({ pokemons }) => {
 
     const { id } = useParams()
     const selectedPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
@@ -55,7 +55,7 @@ const showPokemon = ({ pokemons }) => {
             <NavLink to="#">Delete Pokemon</NavLink>
           </Button>
           <Button>
-            <NavLink to='/myPokemon'>My Pokemon</NavLink>
+            <NavLink to='/mycollection'>My Pokemon</NavLink>
           </Button>
 
           <Button>
@@ -67,4 +67,4 @@ const showPokemon = ({ pokemons }) => {
   )
 }
 
-export default showPokemon
+export default ShowPokemon
