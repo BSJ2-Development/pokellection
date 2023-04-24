@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, NavLink } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
-const ShowPokemon = ({ pokemons }) => {
+const PokemonShowPage = ({ pokemons }) => {
 
     const { id } = useParams()
     const selectedPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
@@ -68,4 +68,4 @@ const ShowPokemon = ({ pokemons }) => {
   )
 }
 
-export default ShowPokemon
+export default PokemonShowPage

@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowPokemon from './ShowPokemon'
+import PokemonShowPage from './PokemonShowPage'
 import mockPokemon from "../mockPokemon";
 import { render, screen } from '@testing-library/react'
 import { BrowserRouter, MemoryRouter, Routes, Route } from 'react-router-dom';
@@ -11,7 +11,7 @@ const renderShow = () => {
   render (
     <MemoryRouter initialEntries={["/pokemonshow/1"]}>
       <Routes>
-        <Route path='/pokemonshow/:id' element={<ShowPokemon pokemons={mockPokemon}/> }/>
+        <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={mockPokemon}/> }/>
       </Routes>
     </MemoryRouter>
   )
@@ -29,4 +29,4 @@ describe("<ShowPokemon />", () => {
   })
 })
 
-export default ShowPokemon
+export default PokemonShowPage
