@@ -33,6 +33,9 @@
     ],
     "moduleNameMapper": {
       "\\.(jpg)$": "<rootDir>/app/javascript/components/assets/jpgMock.js"
-    }
+    },
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
   }
 }
