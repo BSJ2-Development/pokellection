@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowPokemon from './showPokemon'
+import ShowPokemon from './ShowPokemon'
 import mockPokemon from "../mockPokemon";
 import { render, screen } from '@testing-library/react'
 import { BrowserRouter, MemoryRouter, Routes, Route } from 'react-router-dom';

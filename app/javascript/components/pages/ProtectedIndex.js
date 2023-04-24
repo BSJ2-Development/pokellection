@@ -11,7 +11,7 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
     <h1>My Pokemon</h1>
     <div className='index-cards'>
       <button className='add-new-card'>
-        <NavLink href="#">Add a New Card</NavLink>
+        <NavLink to='/pokemonnew'>Add a New Card</NavLink>
       </button>
       {myPokemon?.map((pokemon, index) => {
         return(
