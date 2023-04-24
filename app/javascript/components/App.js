@@ -33,7 +33,7 @@ const App = (props) => {
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/pokemonindex' element={<PokemonIndex pokemons={pokemons}/>} />
           <Route path='/pokemonshow/:id' element={<ShowPokemon pokemons={pokemons}/> } />
-          <Route path='/mypokemon' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
+          <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
           
           <Route path='*' element={<NotFound />} />
         </Routes>
