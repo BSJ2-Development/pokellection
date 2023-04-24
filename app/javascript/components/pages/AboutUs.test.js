@@ -14,24 +14,25 @@ describe("<AboutUs />", () => {
     )
   }
  
-  it("shows brandons linkedIn icon", () => {
+  beforeEach(() => {
     aboutUsRender()
-    const brandonsLinkedIn = screen.getByRole('img', {
-      name: /brandons/i
+  }) 
+    
+    it("shows brandons linkedIn icon", () => {
+      const brandonsLinkedIn = screen.getByRole('img', {
+        name: /brandons/i
+      })
+      expect(brandonsLinkedIn).toBeInTheDocument()
     })
-    expect(brandonsLinkedIn).toBeInTheDocument()
-  })
-
-  it("shows simons linkedIn icon", () => {
-    aboutUsRender()
-    const simonsLinkedIn = screen.getByRole('img', {
+    
+    it("shows simons linkedIn icon", () => {
+      const simonsLinkedIn = screen.getByRole('img', {
       name: /simons/i
     })
     expect(simonsLinkedIn).toBeInTheDocument()
   })
 
   it("shows joshs linkedIn icon", () => {
-    aboutUsRender()
     const joshsLinkedIn = screen.getByRole('img', {
       name: /joshs/i
     })
@@ -39,7 +40,6 @@ describe("<AboutUs />", () => {
   })
 
   it("shows jacobs linkedIn icon", () => {
-    aboutUsRender()
     const jacobsLinkedIn = screen.getByRole('img', {
       name: /jacobs/i
     })

@@ -30,6 +30,9 @@
     "testEnvironment": "jsdom",
     "roots": [
       "app/javascript/components"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg)$": "<rootDir>/app/javascript/components/assets/jpgMock.js"
+    }
   }
 }

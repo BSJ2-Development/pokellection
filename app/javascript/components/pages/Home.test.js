@@ -20,6 +20,14 @@ describe ("<Home />", () => {
     expect(welcome).toBeInTheDocument()
   })
 
+  it("has a button named get started now", () => {
+    homeRender()
+    const getStartedNow = screen.getByRole('button', {
+      name: /get started now/i
+    })
+    expect(getStartedNow).toBeInTheDocument
+  })
+
   it("renders images in the carousel", () => {
     homeRender()
     const image1 = screen.getByRole('img', {
@@ -62,6 +70,19 @@ describe ("<Home />", () => {
         name: /pikachu/i
       })
       expect(image10).toBeInTheDocument()
+  })
+
+  it("has clickable links to view other images", () => {
+    homeRender()
+    const previous = screen.getByRole('button', {
+      name: /Previous/i
+    })
+    expect(previous).toBeInTheDocument()
+
+    const next = screen.getByRole('button', {
+      name: /Next/i
+    })
+    expect(next).toBeInTheDocument()
   })
   
   it("shows a description of the app", () => {

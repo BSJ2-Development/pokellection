@@ -48,6 +48,13 @@ body{
     width: 300px;
 }
 
+.carousel-caption {
+    position: relative;
+    left: 0%; 
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
 .ptagonhomepage{
     padding-left:40px ;
     padding-right: 40px ;
@@ -59,7 +66,15 @@ body{
     text-align: center;
 }
 
-.getstartbutton{
+.get-started-button a {
+    color: black
+}
+
+.get-started-button a:hover {
+    color: var(--bs-link-hover-color);
+}
+
+.get-started-button{
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: #ea7ba2;

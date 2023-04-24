@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import Brandon from '../assets/Brandon.png'
-import Simon from '../assets/Simon.png'
-import Jacob from '../assets/Jacob.jpg'
+import Brandon from "../assets/Brandon.jpg"
+import Simon from "../assets/Simon.jpg"
+import Jacob from "../assets/Jacob.jpg"
 
 
 const AboutUs = () => {

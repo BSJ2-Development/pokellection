@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Card, CardBody, CardTitle, CardText, ListGroup, ListGroupItem, Button } from 'reactstrap'
+import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
  
 const PokemonIndex = ({ pokemons }) => {
@@ -13,7 +13,7 @@ const PokemonIndex = ({ pokemons }) => {
         {pokemons?.map((pokemon, index) => {
 
           return (
-            <div data-testid="card" >
+            <div>
               <Card
                 key={index}
                 style={{width: '18rem'}}>

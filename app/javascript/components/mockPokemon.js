@@ -1,5 +1,6 @@
 const mockPokemon = [
   {
+    id: 1,
     pokemon_name: 'BULBASAUR', 
     pokemon_nickname: 'Bongo', 
     pokemon_type: 'Grass', 
@@ -10,8 +11,10 @@ const mockPokemon = [
     hp: 48, 
     ability: 'Vine Whip', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg',
+    user_id: 1
   },
   {
+    id: 2,
     pokemon_name: 'IVYSAUR', 
     pokemon_nickname: 'Green Ivy', 
     pokemon_type: 'Grass', 
@@ -22,8 +25,10 @@ const mockPokemon = [
     hp: 63, 
     ability: 'Razor Leaf', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg',
+    user_id: 1
   },
   {
+    id: 3,
     pokemon_name: 'VENUSAUR', 
     pokemon_nickname: 'Stinky', 
     pokemon_type: 'Grass', 
@@ -34,8 +39,10 @@ const mockPokemon = [
     hp: 84, 
     ability: 'Poison Powder', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg',
+    user_id: 1
   },
   {
+    id: 4,
     pokemon_name: 'CHARMANDER', 
     pokemon_nickname: 'Chupu', 
     pokemon_type: 'Fire', 
@@ -46,8 +53,10 @@ const mockPokemon = [
     hp: 41, 
     ability: 'Scratch', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg',
+    user_id: 1
   },
   {
+    id: 5,
     pokemon_name: 'CHARMELEON', 
     pokemon_nickname: 'Chupo', 
     pokemon_type: 'Fire', 
@@ -58,8 +67,10 @@ const mockPokemon = [
     hp: 58, 
     ability: 'Flare', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg',
+    user_id: 1
   },
   {
+    id: 6,
     pokemon_name: 'CHARIZARD', 
     pokemon_nickname: 'Chupi', 
     pokemon_type: 'Fire', 
@@ -70,8 +81,10 @@ const mockPokemon = [
     hp: 78, 
     ability: 'Blast Burn', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg',
+    user_id: 1
   },
   {
+    id: 7,
     pokemon_name: 'SQUIRTLE', 
     pokemon_nickname: 'Yurtle', 
     pokemon_type: 'Water', 
@@ -82,8 +95,10 @@ const mockPokemon = [
     hp: 44, 
     ability: 'Shell Attack', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg',
+    user_id: 1
   },
   {
+    id: 8,
     pokemon_name: 'WARTORTLE', 
     pokemon_nickname: 'Yurtle Yurt', 
     pokemon_type: 'Water', 
@@ -94,8 +109,10 @@ const mockPokemon = [
     hp: 59, 
     ability: 'Water Blast', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg',
+    user_id: 1
   },
   {
+    id: 9,
     pokemon_name: 'BLASTOISE', 
     pokemon_nickname: 'Yurtle Yurtle', 
     pokemon_type: 'Water', 
@@ -106,8 +123,10 @@ const mockPokemon = [
     hp: 81, 
     ability: 'Hydro Tackle', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/9.svg',
+    user_id: 1
   },
   {
+    id: 10,
     pokemon_name: 'PIKACHU', 
     pokemon_nickname: 'Pika', 
     pokemon_type: 'Electric', 
@@ -118,6 +137,7 @@ const mockPokemon = [
     hp: 38, 
     ability: 'Thunder Shock', 
     image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg',
+    user_id: 1
   }
 ]
 
