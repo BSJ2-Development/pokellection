@@ -7,6 +7,7 @@ const ShowPokemon = ({ pokemons }) => {
     const { id } = useParams()
     const selectedPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
 
+    
   return (
     <>
       {selectedPokemon && (
