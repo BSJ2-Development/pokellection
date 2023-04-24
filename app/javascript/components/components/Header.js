@@ -17,7 +17,7 @@ const Header = ({
           <NavItem className="nav_bar_item">
             <NavLink className="nav_links" to="/">Pokellection</NavLink>
           </NavItem>
-          <NavItem className="nav_bar_item" >
+          <NavItem className="nav_bar_item">
             <NavLink className="nav_links" to="/">Home</NavLink>
           </NavItem>
           <NavItem className="nav_bar_item">
@@ -26,19 +26,19 @@ const Header = ({
           {logged_in &&
             <>
               <NavItem className="nav_bar_item">
-                <NavLink className="nav_links"   to="/">My Collection</NavLink>
+                <NavLink className="nav_links" to="/mycollection">My Collection</NavLink>
               </NavItem>
-              <NavItem className="nav_bar_item" >
+              <NavItem className="nav_bar_item">
                 <a href={sign_out_route}>Sign Out</a>
               </NavItem>
             </>
           }
           {!logged_in &&
           <>
-            <NavItem className="nav_bar_item" >
+            <NavItem className="nav_bar_item">
               <a className="nav_links" href={sign_in_route}>Sign In</a>
             </NavItem>
-            <NavItem className="nav_bar_item" >
+            <NavItem className="nav_bar_item">
               <a className="nav_links" href={new_user_route}>Sign Up</a>
             </NavItem>
           </>

@@ -34,15 +34,15 @@ const Home = ()  => {
     return (
 
       <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-        >
+      onExiting={() => setAnimating(true)}
+      onExited={() => setAnimating(false)}
+      key={item.src}
+      >
+      <CarouselCaption className='carousel-text'
+        // captionText={item.caption}
+        captionHeader={item.caption}
+        />
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
-          />
       </CarouselItem>
     );
   });
@@ -52,11 +52,11 @@ const Home = ()  => {
     <br></br>
     <br></br>
       <h1 className='welcome_homepage'>Welcome to Pokellection</h1>
-            <button>
-        <NavLink to='/pokemonindex'>
-          Get Started Now!
-        </NavLink>
-      </button>
+        <button className='get-started-button'>
+          <NavLink to='/pokemonindex'>
+            Get Started Now!
+          </NavLink>
+        </button>
 
       <Carousel className='carousel-content'
       activeIndex={activeIndex}
@@ -81,7 +81,7 @@ const Home = ()  => {
           />
       </Carousel>
     <div className='homepage_description'> 
-      <p className='ptagonhomepage'>
+      <p className='tapgonhomepage'>
       With Pokellection, you can manage your entire collection of Pokemon across all platforms. From the video games, to the card game or even the action figures you have on your shelf. By creating new cards for each Pokemon within your collection, you can add to the Pokellection Pokedex for everyone to see. When you log in, you can enjoy checking out the cards that everyone has contributed, but you can only modify the listings that you have added yourself.
       </p> 
     </div>
