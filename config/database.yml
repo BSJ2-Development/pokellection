@@ -84,3 +84,5 @@ production:
   database: BSJ2_pokellection_production
   username: BSJ2_pokellection
   password: <%= ENV["BSJ2_POKELLECTION_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
+
