@@ -55,7 +55,7 @@ const showPokemon = ({ pokemons }) => {
             <NavLink to="#">Delete Pokemon</NavLink>
           </Button>
           <Button>
-            <NavLink to='/myPokemon'>My Pokemon</NavLink>
+            <NavLink to='/mycollection'>My Pokemon</NavLink>
           </Button>
 
           <Button>
