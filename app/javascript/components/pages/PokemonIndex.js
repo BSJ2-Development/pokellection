@@ -37,9 +37,7 @@ const PokemonIndex = ({ pokemons }) => {
                 </CardBody>
                 <CardBody>
                   <Button>
-                    <NavLink href="#">
-                      View More
-                    </NavLink>
+                    <NavLink to={`/pokemonshow/:id`}>View More</NavLink>
                   </Button>
                 </CardBody>
               </Card>

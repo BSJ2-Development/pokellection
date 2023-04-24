@@ -7,6 +7,7 @@ import ProtectedIndex from "./pages/ProtectedIndex"
 import Footer from "./components/Footer"
 import AboutUs from "./pages/AboutUs"
 import NotFound from "./pages/NotFound"
+import ShowPokemon from './pages/showPokemon'
 
 
 const App = (props) => {
@@ -31,7 +32,9 @@ const App = (props) => {
           <Route path='/' element={<Home />} />
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/pokemonindex' element={<PokemonIndex pokemons={pokemons}/>} />
-          <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
+          <Route path='/pokemonshow/:id' element={<ShowPokemon pokemons={pokemons}/> } />
+          <Route path='/mypokemon' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
+          
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
