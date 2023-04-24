@@ -80,7 +80,4 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: BSJ2_pokellection_production
-  username: BSJ2_pokellection
-  password: <%= ENV["BSJ2_POKELLECTION_DATABASE_PASSWORD"] %>
+  <<: *defaulturl: <%= ENV['DATABASE_URL'] %>
