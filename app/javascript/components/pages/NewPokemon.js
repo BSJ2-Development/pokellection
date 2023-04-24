@@ -41,60 +41,93 @@ const NewPokemon = ({ current_user, createPokemons}) => {
   return (
     <>
       <Form>
+
+      <FormGroup>
+          <Label for="pokedex-number">
+            Pokemon No:
+          </Label>
+            <Input
+              id='pokedex-number'
+              name="pokedex-number"
+              placeholder="Add your Pokedex number here"
+              type="number"
+              onChange={handleChange}
+            />
+        </FormGroup>
+
         <FormGroup>
           <Label for="pokemon-name">
             Pokemon Name:
           </Label>
             <Input
+              id='pokemon-name'
               name="pokemon-name"
-              placeholder="Add your Pokemon's "
+              placeholder="Add your Pokemon's name here"
               type="text"
               onChange={handleChange}
             />
         </FormGroup>
 
         <FormGroup>
-          <Label for="age">
-            Dinosaur Age:
+          <Label for="pokemon-nickname">
+            Pokemon Nickname:
           </Label>
             <Input
-              name="age"
-              placeholder="How many millions of years old are you really?"
+              id='pokemon-nickname'
+              name="pokemon-nickname"
+              placeholder="Add your Pokemon's nickname here"
+              type="text"
+              onChange={handleChange}
+            />
+        </FormGroup>
+
+        <FormGroup>
+          <Label for="pokemon-hp">
+            Pokemon's HP:
+          </Label>
+            <Input
+              id='pokemon-hp'
+              name="pokemon-hp"
+              placeholder="Add your Pokemon's HP here"
               type="number"
               onChange={handleChange}
             />
         </FormGroup>
         
         <FormGroup>
-          <Label for="diet">
-            Dinosaur Diet:
+          <Label for="pokemon-height">
+            Pokemon's Height:
           </Label>
-          <Input
-            id="diet"
-            name="diet"
-            placeholder="What do you REALLY like to eat?"
-            type="select"
-            onChange={handleChange}
-          >
-            <option value="Carnivore">
-              Carnivore
-            </option>
-            <option value="Herbivore">
-              Herbivore
-            </option>
-            <option value="Omnivore">
-              Omnivore   
-            </option>
-          </Input>
+            <Input
+              id='pokemon-height' 
+              name="pokemon-height"
+              placeholder="Add your Pokemon's height here"
+              type="number"
+              onChange={handleChange}
+            />
         </FormGroup>
 
         <FormGroup>
-          <Label for="enjoys">
-            Dinosaur Enjoys:
+          <Label for="pokemon-weight">
+            Pokemon's Weight:
           </Label>
             <Input
-              name="enjoys"
-              placeholder="What do you enjoy doing over the millenia?"
+              id='pokemon-weight' 
+              name="pokemon-weight"
+              placeholder="Add your Pokemon's weight here"
+              type="number"
+              onChange={handleChange}
+            />
+        </FormGroup>
+
+        <FormGroup>
+          <Label for="pokemon-ability">
+            Pokemon Ability:
+          </Label>
+            <Input
+              id='pokemon-ability'
+              name="pokemon-ability"
+              placeholder="Add your Pokemon's name here"
               type="text"
               onChange={handleChange}
             />
@@ -105,6 +138,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
             Image URL
           </Label>
             <Input
+              id='image'  
               name="image"
               type="url"
               onChange={handleChange}
