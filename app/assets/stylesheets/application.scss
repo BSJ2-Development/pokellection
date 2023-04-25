@@ -115,6 +115,8 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     padding-top: 35px;
+    display:contents;
+    justify-content:space-around;
 }
 
 .squares-container-left {
@@ -128,27 +130,27 @@ body{
 }
 
 .linked-in-right {
-    max-height: 100px;
-    max-width: 100px;
-    margin-left: 75%;
+    max-height: 50px;
+    max-width: 50px;
+    
 }
 
-.linked-in-left {
-    max-height: 100px;
-    max-width: 100px;
-    margin-right: 75%;
-}
+
 
 .about-me-images-container {
-    height: 30vh;
+    // height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // grid-template-columns: 1fr 1fr;
+    
 }
 
 .brandon-self-image {
     
     width: 275px;
     height: 275px;
-    margin-right: 75%;
-    border:dotted;
+    // border:dotted;
     border-color: #342316;
     border-radius: 10px;
 }
@@ -178,6 +180,46 @@ body{
     border:dotted;
     border-color: #342316;
     border-radius: 10px;
+}
+.fav_pokemon{
+    height: 100px;
+    width: 100px;
+}
+
+.bio-section{
+    text-align: center;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+.dev-container{
+    display: flex;
+    justify-content:space-around ;
+    align-items:center;
+    margin-left:150px ;
+    margin-right:150px;
+    height: auto;
+    border: dotted;
+    border-color: #342316;
+    margin-top: 50px;
+    margin-bottom:50px ;
+
+    background-color:#ddb57d;
+}
+
+
+.about-me-text{
+
+}
+
+.links-to-social{
+    display: flex;
+    justify-content: center;
+    
+
 }
 
 
