@@ -1,9 +1,10 @@
 import React from "react";
-import PokemonIndex from "./PokemonIndex";
+import PokemonIndex from "../components/pages/PokemonIndex";
 import { render, screen, waitFor } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
-import mockPokemon from "../mockPokemon";
+import mockPokemon from "../components/mockPokemon";
+
 
 describe("<PokemonIndex />", () => {
 

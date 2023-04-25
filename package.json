@@ -29,7 +29,7 @@
   "jest": {
     "testEnvironment": "jsdom",
     "roots": [
-      "app/javascript/components"
+      "app/javascript/"
     ],
     "moduleNameMapper": {
       "\\.(jpg)$": "<rootDir>/app/javascript/components/assets/jpgMock.js"
@@ -39,3 +39,4 @@
     ]
   }
 }
+

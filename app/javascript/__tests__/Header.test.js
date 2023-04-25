@@ -2,7 +2,8 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom"
-import Header from "./Header"
+import Header from "../components/components/Header"
+
 
 const headerRender = () => {
   render(
