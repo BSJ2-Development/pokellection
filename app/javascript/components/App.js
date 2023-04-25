@@ -52,6 +52,18 @@ const App = (props) => {
       .catch((error) => console.log(error));
   };
 
+  const deletePokemon = (id) => {
+    fetch(`/pokemons/${id}`, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "DELETE",
+    })
+    .then((response) => response.json())
+    .then(() => readPokemons())
+    .catch((error) => console.log(error));
+  }
+
   return (
     <>
       <BrowserRouter>
@@ -60,7 +72,7 @@ const App = (props) => {
           <Route path='/' element={<Home />} />
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/pokemonindex' element={<PokemonIndex pokemons={pokemons}/>} />
-          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons}/> } />
+          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} deletePokemon={deletePokemon}/> } />
           <Route path="/pokemonupdate/:id" element={<PokemonUpdate pokemons={pokemons} updatePokemon={updatePokemon}/>} />
           <Route path='/pokemonnew' element={<NewPokemon createPokemons={createPokemons} current_user={props.current_user}/>} />
           <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />

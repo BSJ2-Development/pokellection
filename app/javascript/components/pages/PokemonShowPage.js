@@ -1,11 +1,19 @@
 import React from 'react'
-import { useParams, NavLink } from 'react-router-dom'
+import { useParams, NavLink, useNavigate } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
-const PokemonShowPage = ({ pokemons }) => {
+const PokemonShowPage = ({ pokemons, deletePokemon }) => {
 
     const { id } = useParams()
+
     const selectedPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
+
+    const nav = useNavigate()
+
+    const handleSubmit = () => {
+      deletePokemon(selectedPokemon.id)
+      nav('/mycollection')
+    }
 
     
   return (
@@ -51,10 +59,10 @@ const PokemonShowPage = ({ pokemons }) => {
           
           
           <Button>
-            <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Edit Pokemon</NavLink>
+            <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Update Pokemon</NavLink>
           </Button>
-          <Button>
-            <NavLink to="#">Delete Pokemon</NavLink>
+          <Button onClick={handleSubmit}>
+            <NavLink to="/mycollection">Delete Pokemon</NavLink>
           </Button>
           <Button>
             <NavLink to='/mycollection'>My Pokemon</NavLink>
