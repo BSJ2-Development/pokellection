@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs"
 import NotFound from "./pages/NotFound"
 import PokemonShowPage from "./pages/PokemonShowPage"
 import NewPokemon from './pages/NewPokemon'
+import PokemonUpdate from "./pages/PokemonUpdate"
 
 
 const App = (props) => {
@@ -38,6 +39,19 @@ const App = (props) => {
     .catch((error) => console.log(error))
    }
 
+   const updatePokemon = (pokemon, id) => {
+    fetch(`/pokemons/${id}`, {
+      body: JSON.stringify(pokemon),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "PATCH",
+    })
+      .then((response) => response.json())
+      .then((payload) => readPokemons(payload))
+      .catch((error) => console.log(error));
+  };
+
   return (
     <>
       <BrowserRouter>
@@ -47,6 +61,7 @@ const App = (props) => {
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/pokemonindex' element={<PokemonIndex pokemons={pokemons}/>} />
           <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons}/> } />
+          <Route path="/pokemonupdate/:id" element={<PokemonUpdate pokemons={pokemons} updatePokemon={updatePokemon}/>} />
           <Route path='/pokemonnew' element={<NewPokemon createPokemons={createPokemons} current_user={props.current_user}/>} />
           <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
           <Route path='*' element={<NotFound />} />

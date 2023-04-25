@@ -33,4 +33,12 @@ describe('<NewPokemon />', () => {
     const placeholder = screen.getByPlaceholderText(/Add your Pokedex number here/i)
     expect(placeholder).toBeInTheDocument()
   })
+
+  it("renders a button to submit updated", () => {
+    expect(
+      screen.getByRole("button", {
+        name: /Submit/i,
+      })
+    ).toBeInTheDocument;
+  });
 })
