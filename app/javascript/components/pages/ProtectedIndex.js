@@ -6,6 +6,7 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
   const myPokemon = pokemons?.filter(
     (pokemon) => current_user?.id === pokemon.user_id
   )
+  
   return (
     <>
     <h1>My Pokemon</h1>

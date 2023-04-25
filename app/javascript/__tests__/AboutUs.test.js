@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import AboutUs from "./AboutUs";
 import '@testing-library/jest-dom'
+import AboutUs from "../components/pages/AboutUs"
 
 describe("<AboutUs />", () => {
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import Home from './Home';
+import Home from '../components/pages/Home';
 import '@testing-library/jest-dom'
 
 describe ("<Home />", () => {

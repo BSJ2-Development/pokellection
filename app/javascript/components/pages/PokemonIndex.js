@@ -49,6 +49,4 @@ const PokemonIndex = ({ pokemons }) => {
   )
 }
 
-  
-
 export default PokemonIndex

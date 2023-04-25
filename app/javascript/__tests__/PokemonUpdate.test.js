@@ -2,8 +2,8 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Routes, Route } from "react-router-dom";
 import "@testing-library/jest-dom";
-import PokemonUpdate from './PokemonUpdate'
-import mockPokemon from "../mockPokemon";
+import PokemonUpdate from '../components/pages/PokemonUpdate'
+import mockPokemon from "../components/mockPokemon";
 
 describe("<PokemonUpdate />", () => {
   beforeEach(() => {

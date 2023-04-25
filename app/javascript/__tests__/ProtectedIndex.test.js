@@ -1,9 +1,9 @@
 import React from "react";
-import ProtectedIndex from "./ProtectedIndex";
+import ProtectedIndex from "../components/pages/ProtectedIndex";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
-import mockPokemon from "../mockPokemon";
+import mockPokemon from "../components/mockPokemon";
 
 describe("<ProtectedIndex />", () => {
 
