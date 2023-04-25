@@ -27,6 +27,21 @@ describe("<ShowPokemon />", () => {
     const pokemon = screen.getByText(`No. ${mockPokemon[0].pokedex_entry}`)
     expect(pokemon).toBeInTheDocument()
   })
+
+  it("renders a button for update", () => {
+    renderShow()
+    expect(
+      screen.getByRole("button", {
+        name: /Update Pokemon/i,
+      })
+    ).toBeInTheDocument;
+  });
+
+  it("renders a button for delete", () => {
+    renderShow()
+    const deleteButton = screen.getByText(/delete/i)
+    expect(deleteButton).toBeInTheDocument()
+  })
 })
 
 export default PokemonShowPage

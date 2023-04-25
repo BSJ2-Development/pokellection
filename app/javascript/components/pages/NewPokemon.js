@@ -4,11 +4,9 @@ import {
   FormGroup, 
   Label, 
   Input, 
-  FormFeedback, 
-  FormText, 
   Button 
 } from 'reactstrap'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const NewPokemon = ({ current_user, createPokemons}) => {
