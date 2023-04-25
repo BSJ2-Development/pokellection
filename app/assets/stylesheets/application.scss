@@ -274,6 +274,21 @@ a:active { text-decoration: none; }
     color: black;
 }
 
+
+// index pages
+.index-header { 
+    margin-top: 85px;
+}
+
 .add-new-card {
-  margin-top: 80px;
+  margin-top: 25px;
+}
+
+.index-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

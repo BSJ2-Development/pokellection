@@ -8,11 +8,11 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
   )
   return (
     <>
-    <h1>My Pokemon</h1>
-    <div className='index-cards'>
+    <h1 className='index-header'>My Pokemon</h1>
       <button className='add-new-card'>
         <NavLink to='/pokemonnew'>Add a New Card</NavLink>
       </button>
+    <div className='index-cards'>
       {myPokemon?.map((pokemon, index) => {
         return(
           <Card

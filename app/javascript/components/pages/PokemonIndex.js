@@ -7,7 +7,7 @@ const PokemonIndex = ({ pokemons }) => {
 
   return (
     <>
-      <h1>Pokemon Index</h1>
+      <h1 className='index-header'>Pokemon Index</h1>
 
         <div className='index-cards'>
         {pokemons?.map((pokemon, index) => {
