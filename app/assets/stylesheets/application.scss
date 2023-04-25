@@ -303,3 +303,35 @@ margin-top: 80px;
     border-radius: 25px;
     background-color: rgb(162, 161, 161);
 }
+
+
+// show page
+
+.show-pokemon-header {
+margin-top: 80px;
+}
+
+.show-card-container{
+    display: flex;
+    justify-content: center;
+}
+
+.show-page-buttons {
+    margin-bottom: 45px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.show-page-buttons .button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #ea7ba2;
+    border:dotted;
+    border-color: #342316;
+    text-align: center ;
+    padding-top: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+}
