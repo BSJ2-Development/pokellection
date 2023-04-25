@@ -52,13 +52,7 @@ const Home = ()  => {
     <>
     <br></br>
     <br></br>
-      <a href="/"><img src={pokellection} alt="About Image"/></a>
-        <button className='get-started-button'>
-          <NavLink to='/pokemonindex'>
-            Get Started Now!
-          </NavLink>
-        </button>
-
+        <NavLink className='pokellection-logo' to="/pokemonindex"><img src={pokellection} alt="About Image"/></NavLink>
       <Carousel className='carousel-content'
       activeIndex={activeIndex}
       next={next}
