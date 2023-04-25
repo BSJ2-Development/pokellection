@@ -5,5 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :pokemon
 
-  validates :user_name, uniqueness: true
 end
