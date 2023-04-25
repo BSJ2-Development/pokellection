@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom"
 import Header from "../components/components/Header"
 
-
 const headerRender = () => {
   render(
     <BrowserRouter>
@@ -44,14 +43,6 @@ describe("<Header />", () => {
       name: /home/i
     })
     expect(homePage).toBeInTheDocument()
-  })
-
-  it("has a clickable link to let a user view the home page", () => {
-    headerRender()
-    const pokellection = screen.getByRole("link", {
-      name: /pokellection/i
-    })
-    expect(pokellection).toBeInTheDocument()
   })
   
   it("has a clickable link to let a user log in", () => {

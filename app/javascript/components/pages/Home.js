@@ -8,7 +8,7 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap';
-import pokellection from '../assets/Pokellection'
+import pokellection from '../assets/Pokellection.png'
 
 const Home = ()  => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -40,8 +40,8 @@ const Home = ()  => {
       key={item.src}
       >
       <CarouselCaption className='carousel-text'
-        // captionText={item.caption}
-        captionHeader={item.caption}
+        captionText={item.caption}
+
         />
         <img src={item.src} alt={item.altText} />
       </CarouselItem>
