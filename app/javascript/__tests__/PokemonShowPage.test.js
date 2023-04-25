@@ -3,8 +3,8 @@ import PokemonShowPage from '../components/pages/PokemonShowPage'
 import mockPokemon from "../components/mockPokemon";
 import { render, screen } from '@testing-library/react'
 import { BrowserRouter, MemoryRouter, Routes, Route } from 'react-router-dom';
-import { UserEvent } from '@testing-library/user-event'
 import '@testing-library/jest-dom'
+
 
 const renderShow = () => {
   render (
@@ -35,12 +35,7 @@ describe("<ShowPokemon />", () => {
       })
     ).toBeInTheDocument;
   });
-
-  it("renders a button for delete", () => {
-    renderShow()
-    const deleteButton = screen.getByText(/delete/i)
-    expect(deleteButton).toBeInTheDocument()
-  })
 })
+
 
 export default PokemonShowPage

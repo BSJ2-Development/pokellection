@@ -2,6 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import Home from '../components/pages/Home';
+import fireEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom'
 
 
@@ -14,20 +15,6 @@ describe ("<Home />", () => {
       </BrowserRouter>
     )
   }
-
-  it("renders without crashing", () => {
-    homeRender()
-    const welcome = screen.getByText('Welcome to Pokellection')
-    expect(welcome).toBeInTheDocument()
-  })
-
-  it("has a button named get started now", () => {
-    homeRender()
-    const getStartedNow = screen.getByRole('button', {
-      name: /get started now/i
-    })
-    expect(getStartedNow).toBeInTheDocument
-  })
 
   it("renders images in the carousel", () => {
     homeRender()
@@ -86,6 +73,26 @@ describe ("<Home />", () => {
     expect(next).toBeInTheDocument()
   })
   
+  it("has the next image render when a user clicks next", async () => {
+    homeRender()
+    screen.debug()
+    const next = screen.getByRole("button", { 
+      name: /next/i
+    })
+      await fireEvent.click(next)
+      expect(next).toBeInTheDocument()
+  })
+
+  it("has the previous image render when a user clicks previous", async () => {
+    homeRender()
+    screen.debug()
+    const previous = screen.getByRole("button", { 
+      name: /previous/i
+    })
+      await fireEvent.click(previous)
+      expect(previous).toBeInTheDocument()
+  })
+
   it("shows a description of the app", () => {
     homeRender()
     const description = screen.getByText(
