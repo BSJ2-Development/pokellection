@@ -34,10 +34,8 @@ const NewPokemon = ({ current_user, createPokemons}) => {
   }
 
   const handleSubmit = () => {
-    console.log(handleSubmit)
     createPokemons(myPokemon)
     nav('/mycollection')
-    console.log(myPokemon)
   }
 
   return (

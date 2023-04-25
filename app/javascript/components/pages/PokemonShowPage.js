@@ -49,8 +49,9 @@ const PokemonShowPage = ({ pokemons }) => {
             </CardBody>
           </Card>
           
+          
           <Button>
-            <NavLink to="#">Edit Pokemon</NavLink>
+            <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Edit Pokemon</NavLink>
           </Button>
           <Button>
             <NavLink to="#">Delete Pokemon</NavLink>
