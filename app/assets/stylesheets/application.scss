@@ -30,6 +30,7 @@ body{
     justify-self: center;
     border:dotted;
     border-color: #342316;
+    margin-top: 20px;
 }
 
 .carousel-inner{
@@ -284,7 +285,15 @@ margin-top: 80px;
 }
 
 .add-new-card {
+    margin-bottom: 20px;
     margin-top: 25px;
+    background-color: #ea7ba2;
+    border:dotted;
+    border-color: #342316;
+    text-align: center ;
+    padding-top: 5px;
+    border-radius: 30px;
+    text-decoration: none;
 }
 
 .index-cards {
