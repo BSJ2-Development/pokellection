@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import '@testing-library/jest-dom'
 import AboutUs from "../components/pages/AboutUs"
 
+
 describe("<AboutUs />", () => {
 
   const aboutUsRender = () => {

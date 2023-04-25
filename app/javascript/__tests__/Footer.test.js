@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom"
 import Footer from "../components/components/Footer";
 
-
 const footerRender = () => {
   render(
     <BrowserRouter>

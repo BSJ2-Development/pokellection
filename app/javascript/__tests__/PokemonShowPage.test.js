@@ -6,7 +6,6 @@ import { BrowserRouter, MemoryRouter, Routes, Route } from 'react-router-dom';
 import { UserEvent } from '@testing-library/user-event'
 import '@testing-library/jest-dom'
 
-
 const renderShow = () => {
   render (
     <MemoryRouter initialEntries={["/pokemonshow/1"]}>
