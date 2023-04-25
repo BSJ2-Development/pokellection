@@ -8,6 +8,7 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap';
+import pokellection from '../assets/Pokellection'
 
 const Home = ()  => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -51,7 +52,7 @@ const Home = ()  => {
     <>
     <br></br>
     <br></br>
-      <h1 className='welcome_homepage'>Welcome to Pokellection</h1>
+      <a href="/"><img src={pokellection} alt="About Image"/></a>
         <button className='get-started-button'>
           <NavLink to='/pokemonindex'>
             Get Started Now!

@@ -17,11 +17,6 @@ body{
     background-color:#eee1bc;
 }
 
-.welcome_homepage{
-    margin-top: 50px;
-    font-family: 'Press Start 2P', cursive;
-}
-
 .carousel-content{
     background-color:#ddb57d ;
     height: 400px;
@@ -197,7 +192,9 @@ body{
 
 .nav_bar_item.nav-item{
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    // align-items: center;
+    // height: 25px;  
 }
 
 .nav_bar_item{
