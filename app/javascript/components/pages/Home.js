@@ -50,35 +50,39 @@ const Home = ()  => {
 
   return (
     <>
-    <br></br>
-    <br></br>
-        <NavLink className='pokellection-logo' to="/pokemonindex"><img src={pokellection} alt="About Image"/></NavLink>
-      <Carousel className='carousel-content'
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      >
-        <CarouselIndicators
-          items={items}
-          activeIndex={activeIndex}
-          onClickHandler={goToIndex}
-          />
-        {slides}
-        <CarouselControl
-          direction="prev"
-          directionText="Previous"
-          onClickHandler={previous}
-          />
-        <CarouselControl
-          direction="next"
-          directionText="Next"
-          onClickHandler={next}
-          />
-      </Carousel>
-    <div className='homepage_description'> 
-      <p className='tapgonhomepage'>
-      With Pokellection, you can manage your entire collection of Pokemon across all platforms. From the video games, to the card game or even the action figures you have on your shelf. By creating new cards for each Pokemon within your collection, you can add to the Pokellection Pokedex for everyone to see. When you log in, you can enjoy checking out the cards that everyone has contributed, but you can only modify the listings that you have added yourself.
-      </p> 
+    <div className='home-page-background'>
+      <br></br>
+      <br></br>
+        <div className='pokellection-logo-container'>
+          <NavLink className='pokellection-logo' to="/pokemonindex"><img src={pokellection} alt="About Image"/></NavLink>
+        </div>
+        <Carousel className='carousel-content'
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}
+        >
+          <CarouselIndicators
+            items={items}
+            activeIndex={activeIndex}
+            onClickHandler={goToIndex}
+            />
+          {slides}
+          <CarouselControl
+            direction="prev"
+            directionText="Previous"
+            onClickHandler={previous}
+            />
+          <CarouselControl
+            direction="next"
+            directionText="Next"
+            onClickHandler={next}
+            />
+        </Carousel>
+      <div className='homepage_description'> 
+        <p>
+        With Pokellection, you can manage your entire collection of Pokemon across all platforms. From the video games, to the card game or even the action figures you have on your shelf. By creating new cards for each Pokemon within your collection, you can add to the Pokellection Pokedex for everyone to see. When you log in, you can enjoy checking out the cards that everyone has contributed, but you can only modify the listings that you have added yourself.
+        </p> 
+      </div>
     </div>
     </>
   );
