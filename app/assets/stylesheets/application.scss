@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
 // Color Scheme
 // #eee1bc
 // #ddb57d
@@ -11,61 +12,76 @@
 
 
 // Homepage
-body{
+body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     background-color:#eee1bc;
-    padding-top: 140px;
-    padding-bottom: 60px;
 }
 
 .carousel-text {
     font-size: x-large;
 }
 
-.carousel-content{
-    background-color:#ddb57d ;
-    height: 400px;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: "pokefont";
-    display: flex;
-    justify-self: center;
-    border:dotted;
-    border-color: #342316;
-    margin-top: 20px;
+.home-page-background {
+    background-image: url("./Eeveebg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 100vh;
 }
 
-.carousel-inner{
+.pokellection-logo-container {
+    margin-top: -25px;
+    object-fit: contain;
+    align-items: center;
+}
+
+.pokellection-logo img {
+    width:375px;
+    height: 75px;
+}
+
+.carousel-content {
+    background-color:#ddb57d opacity($color: #ddb57dd1);
+    height: 400px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-width: 4px;
+    border-color: #342316;
+    border-radius: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+    box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+}
+
+.carousel-inner {
     object-fit: contain;
     display: flex;
     align-items: center;
     height: 400px;
 }
 
+
 .carousel-item img {
     object-fit: contain;
     height: 300px;
     width: 300px;
+    padding-bottom: 42px;
 }
 
 .carousel-caption {
+    font-size: xx-large;
     position: relative;
     left: 0%; 
     color: black;
     font-family: 'Press Start 2P', cursive;
-}
-
-.ptagonhomepage{
-    padding-left:40px ;
-    padding-right: 40px ;
-    margin-top: 50px;
-    font-size: 1rem;
-    font-family: 'Press Start 2P', cursive;  
-    font-weight: bold;
-    font-style: normal;
-    text-align: center;
 }
 
 .get-started-button a {
@@ -76,7 +92,7 @@ body{
     color: var(--bs-link-hover-color);
 }
 
-.get-started-button{
+.get-started-button {
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: #ea7ba2;
@@ -87,21 +103,28 @@ body{
     border-radius: 30px;
 }
 
-.homepage_description{
+.homepage_description {
+    opacity: 85%;
     background-color: #ddb57d;
-    padding-left:40px ;
-    padding-right: 40px ;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20px;
-    margin-bottom: 140px;
-    font-size: 1rem;
-    font-family: "pokefont";
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: small;
+    font-family: 'Press Start 2P', cursive;
     font-weight: bold;
     font-style: normal;
     text-align: center;
-    border:dotted;
+    border: dotted;
     border-color: #342316;
+    border-radius: 20px;
+    -webkit-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+    box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
 }
 
 // About Us page
@@ -110,7 +133,7 @@ body{
     margin-top: 90px;
 }
 
-.about-us-container{
+.about-us-container {
     background-color: #ddb57d;
     border:dotted;
     border-color: #342316;
@@ -145,8 +168,7 @@ body{
     height: 30vh;
 }
 
-.brandon-self-image {
-    
+.brandon-self-image {    
     width: 275px;
     height: 275px;
     margin-right: 75%;
@@ -194,17 +216,16 @@ body{
     top: 0;
     width: 100%;
     z-index: 1;
-    opacity: 80%;
 }
 
-.nav_bar_item.nav-item{
+.nav_bar_item.nav-item {
     display: flex;
     justify-content: center;
     // align-items: center;
     // height: 25px;  
 }
 
-.nav_bar_item{
+.nav_bar_item {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
@@ -221,8 +242,9 @@ body{
     width: 225px;
     text-align: center;
     align-items: center;
-    // flex: 1;
-   
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
 }
 
 a:link { text-decoration: none; }
@@ -323,7 +345,7 @@ margin-top: 80px;
 margin-top: 80px;
 }
 
-.show-card-container{
+.show-card-container {
     display: flex;
     justify-content: center;
 }
