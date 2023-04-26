@@ -38,6 +38,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
 
   return (
     <>
+    <div >
       <Form>
 
       <FormGroup>
@@ -45,6 +46,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
             Pokemon No:
           </Label>
             <Input
+
               id='pokedex_entry'
               name="pokedex_entry"
               placeholder="Add your Pokedex number here"
@@ -138,7 +140,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
             <Input
               id='ability'
               name="ability"
-              placeholder="Add your Pokemon's name here"
+              placeholder="Add your Pokemon's ability here"
               type="text"
               onChange={handleChange}
             />
@@ -151,7 +153,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
             <Input
               id='pokemon_version'
               name="pokemon_version"
-              placeholder="Add your Pokemon's version here"
+              placeholder="Add your Pokemon version here"
               type="text"
               onChange={handleChange}
             />
@@ -173,6 +175,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
               Submit
         </Button>
       </Form>
+      </div>
     </>
   )
 }
