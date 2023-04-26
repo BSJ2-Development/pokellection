@@ -16,9 +16,6 @@ const Header = ({
       <div className="header-container">      
         <Nav>
           <NavItem className="nav_bar_item">
-            <NavLink className="nav_links" to="/">Pokellection</NavLink>
-          </NavItem>
-          <NavItem className="nav_bar_item">
             <NavLink className="nav_links" to="/">Home</NavLink>
           </NavItem>
           <NavItem className="nav_bar_item">

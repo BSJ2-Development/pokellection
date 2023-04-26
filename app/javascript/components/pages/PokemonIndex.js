@@ -7,13 +7,13 @@ const PokemonIndex = ({ pokemons }) => {
 
   return (
     <>
-      <h1>Pokemon Index</h1>
+      <h1 className='index-header'>Pokemon Index</h1>
 
-        <div className='index-cards'>
+      <div >
         {pokemons?.map((pokemon, index) => {
-
+          
           return (
-            <div>
+            <div className='index-cards'>
               <Card
                 key={index}
                 style={{width: '18rem'}}>
