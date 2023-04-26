@@ -39,8 +39,8 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
               </CardText>
             </CardBody>
             <CardBody>
-              <Button>
-                <NavLink to={`/pokemonshow/${pokemon.id}`}>View More</NavLink>
+              <Button className='show-more-button'>
+                <NavLink to={`/pokemonshow/${pokemon.id}`}>Show More</NavLink>
               </Button>
             </CardBody>
           </Card>

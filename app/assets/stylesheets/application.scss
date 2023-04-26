@@ -1,14 +1,13 @@
 @import "bootstrap";
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-
 // Color Scheme
-// #eee1bc
-// #ddb57d
-// #ad764e
+
+
+// #EEE1BC
+// #DDB57D
+// #AD764E
 // #342316
-// #ea7ba2
+// #EA7BA2
 
 
 // Homepage
@@ -133,13 +132,15 @@ body {
     margin-top: 90px;
 }
 
-.about-us-container {
-    background-color: #ddb57d;
+.about-us-container{
+    background-color: #DDB57D;
     border:dotted;
     border-color: #342316;
     margin-left: 50px;
     margin-right: 50px;
     padding-top: 35px;
+    display:contents;
+    justify-content:space-around;
 }
 
 .squares-container-left {
@@ -153,26 +154,19 @@ body {
 }
 
 .linked-in-right {
-    max-height: 100px;
-    max-width: 100px;
-    margin-left: 75%;
-}
-
-.linked-in-left {
-    max-height: 100px;
-    max-width: 100px;
-    margin-right: 75%;
+    max-height: 50px;
+    max-width: 50px;
 }
 
 .about-me-images-container {
-    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.brandon-self-image {    
+.brandon-self-image {
     width: 275px;
     height: 275px;
-    margin-right: 75%;
-    border:dotted;
     border-color: #342316;
     border-radius: 10px;
 }
@@ -204,35 +198,65 @@ body {
     border-radius: 10px;
 }
 
+.fav_pokemon{
+    height: 100px;
+    width: 100px;
+}
 
-//Header 
+.bio-section{
+    text-align: center;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.dev-container{
+    display: flex;
+    justify-content:space-around ;
+    align-items:center;
+    margin-left:150px ;
+    margin-right:150px;
+    height: auto;
+    border: dotted;
+    border-color: #342316;
+    margin-top: 50px;
+    margin-bottom:50px ;
+    background-color:#ddb57d;
+}
+
+.links-to-social{
+    display: flex;
+    justify-content: center;
+}
+
+//Header
+
 .header-container {
     display: flex;
     justify-content: space-evenly;
-    background-color: #ad764e;
+    background-color: #AD764E;
     border:dotted;
     border-color: #342316;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+    opacity: 80%;
 }
 
-.nav_bar_item.nav-item {
+.nav_bar_item.nav-item{
     display: flex;
     justify-content: center;
-    // align-items: center;
-    // height: 25px;  
 }
 
-.nav_bar_item {
+.nav_bar_item{
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 25px;
     margin-right: 25px;
-    background-color: #ea7ba2;
+    background-color: #EA7BA2;
     border:dotted;
     border-color: #342316;
     padding-top: 5px;
@@ -242,9 +266,6 @@ body {
     width: 225px;
     text-align: center;
     align-items: center;
-    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
-    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
-    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
 }
 
 a:link { text-decoration: none; }
@@ -292,7 +313,7 @@ a:active { text-decoration: none; }
     margin-top: 20px;
     border: dotted;
     border-color: #342316;
-    background-color: #ea7ba2;
+    background-color: #EA7BA2;
     border-radius: 10px;
 }
 
@@ -304,14 +325,9 @@ a:active { text-decoration: none; }
   margin-top: 80px;
 }
 
-// index page
-
-.index-header {
-margin-top: 80px;
-}
+// Index Page
 
 .add-new-card {
-    margin-bottom: 20px;
     margin-top: 25px;
     background-color: #ea7ba2;
     border:dotted;
@@ -322,42 +338,63 @@ margin-top: 80px;
     text-decoration: none;
 }
 
+.add-new-card a {
+    color: black;
+}
+
 .index-cards {
     margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
+    align-content: stretch;
     padding: 15px;
 }
 
 .card {
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 5px 5px 30px 5px;
     background-color: rgb(162, 161, 161);
+    font-size: 0.9rem;
+    height: 400px;
+    overflow: auto;
 }
 
+.show-more-button {
+    background-color: #ea7ba2;
+}
 
-// show page
+.show-more-button a {
+    color:black;
+}
+
+.pokemon-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+// Show Page
 
 .show-pokemon-header {
-margin-top: 80px;
+    margin-top: 80px;
 }
-
-.show-card-container {
+    
+ .show-card-container{
     display: flex;
-    justify-content: center;
+        justify-content: center;
 }
-
+    
 .show-page-buttons {
     margin-bottom: 45px;
     padding-top: 15px;
     display: flex;
     justify-content: center;
-
 }
-
+    
 .show-page-buttons .button {
     margin-bottom: 20px;
     margin-top: 20px;
