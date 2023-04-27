@@ -14,10 +14,10 @@ describe('<NewPokemon />', () => {
       id: 1
     }
   
-     render(
-       <BrowserRouter>
-         <NewPokemon current_user={current_user} />
-       </BrowserRouter>
+    render(
+      <BrowserRouter>
+        <NewPokemon current_user={current_user} />
+      </BrowserRouter>
     )
   })
 

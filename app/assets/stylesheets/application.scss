@@ -28,11 +28,11 @@ body {
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 100vh;
+    height: 92vh;
 }
 
 .pokellection-logo-container {
-    margin-top: -25px;
+    padding-top: 24px;
     object-fit: contain;
     align-items: center;
 }
@@ -103,24 +103,23 @@ body {
 }
 
 .homepage_description {
+    border-image: url("./Border.png") 285 / 285px;
+    border-image-outset: 8px;
     opacity: 85%;
     background-color: #ddb57d;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 3px;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: 14px;
     font-family: 'Press Start 2P', cursive;
-    font-weight: bold;
-    font-style: normal;
+    font-weight: bolder;
     text-align: center;
-    border: dotted;
-    border-color: #342316;
-    border-radius: 20px;
     -webkit-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
     box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
@@ -229,13 +228,13 @@ body {
     justify-content: center;
 }
 
-//Header
-
+//Header 
 .header-container {
     display: flex;
     justify-content: space-evenly;
-    background-color: #AD764E;
-    border:dotted;
+    background-color: #ad764e;
+    border: solid;
+    border-width: 4px;
     border-color: #342316;
     position: fixed;
     top: 0;
@@ -252,30 +251,48 @@ body {
 .nav_bar_item{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-bottom: 10px;
     margin-left: 25px;
     margin-right: 25px;
-    background-color: #EA7BA2;
-    border:dotted;
+    background-color: #ea7ba2;
+    border: solid;
+    border-width: 4px;
     border-color: #342316;
+    border-radius: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
-    border-radius: 10px;
     width: 225px;
     text-align: center;
     align-items: center;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);  
+    height: 42px;   
+    font-size: small;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+.header-buttons:hover {
+    background-color: red;
+
+}
+
+.nav li:hover a {
+    color: rgb(255, 255, 255);
+}
+
+a {color: inherit;}
+
+a:link { text-decoration: none !important; }
+a:visited { text-decoration: none !important; }
+a:hover { text-decoration: none !important; }
+a:active { text-decoration: none !important; }
 .nav_links {
     color: black;
     align-self: center;
- }
+    text-decoration: none !important;
+}
 
 // Footer
 .footer-container {
@@ -322,7 +339,7 @@ a:active { text-decoration: none; }
 }
 
 .add-new-card {
-  margin-top: 80px;
+    margin-top: 80px;
 }
 
 // Index Page

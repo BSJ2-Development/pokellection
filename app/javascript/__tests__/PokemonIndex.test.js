@@ -8,7 +8,7 @@ import mockPokemon from "../components/mockPokemon";
 
 describe("<PokemonIndex />", () => {
 
-     const indexRender = () => {
+    const indexRender = () => {
       render(
         <BrowserRouter>
           <PokemonIndex pokemons={mockPokemon}/>

@@ -14,7 +14,7 @@ describe("<AboutUs />", () => {
       </BrowserRouter>
     )
   }
- 
+
   beforeEach(() => {
     aboutUsRender()
   }) 

@@ -16,13 +16,13 @@ describe("<ProtectedIndex />", () => {
     id: 1
   }
 
-   render(
-     <BrowserRouter>
-       <ProtectedIndex pokemons={mockPokemon}  current_user={current_user}/>
-     </BrowserRouter>
+  render(
+    <BrowserRouter>
+      <ProtectedIndex pokemons={mockPokemon}  current_user={current_user}/>
+    </BrowserRouter>
   )
 })
-   
+
     it("displays each pokemons name", () => {
       mockPokemon.forEach(pokemon => {
       const pokemonName = screen.getByText('Name: ' + pokemon.pokemon_name)

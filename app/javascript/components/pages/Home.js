@@ -51,32 +51,30 @@ const Home = ()  => {
   return (
     <>
     <div className='home-page-background'>
-      <br></br>
-      <br></br>
-        <div className='pokellection-logo-container'>
-          <NavLink className='pokellection-logo' to="/pokemonindex"><img src={pokellection} alt="About Image"/></NavLink>
-        </div>
-        <Carousel className='carousel-content'
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-        >
-          <CarouselIndicators
-            items={items}
-            activeIndex={activeIndex}
-            onClickHandler={goToIndex}
-            />
-          {slides}
-          <CarouselControl
-            direction="prev"
-            directionText="Previous"
-            onClickHandler={previous}
-            />
-          <CarouselControl
-            direction="next"
-            directionText="Next"
-            onClickHandler={next}
-            />
+      <div className='pokellection-logo-container'>
+        <NavLink className='pokellection-logo' to="/pokemonindex"><img src={pokellection} alt="About Image"/></NavLink>
+      </div>
+      <Carousel className='carousel-content'
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+      >
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+          />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+          />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+          />
         </Carousel>
       <div className='homepage_description'> 
         <p>

@@ -52,9 +52,9 @@ const PokemonUpdate = ({ pokemons, current_user, updatePokemon }) => {
         <Form>
           <FormGroup>
             <Label for="pokedex_entry">
-               Pokemon No:
+              Pokemon No:
             </Label>
-             <Input
+            <Input
               id='pokedex_entry'
               name="pokedex_entry"
               placeholder="Add your Pokedex number here"
@@ -67,7 +67,7 @@ const PokemonUpdate = ({ pokemons, current_user, updatePokemon }) => {
           <FormGroup>
             <Label for="pokemon_name">
               Pokemon Name:
-             </Label>
+            </Label>
               <Input
                 id='pokemon_name'
                 name="pokemon_name"
