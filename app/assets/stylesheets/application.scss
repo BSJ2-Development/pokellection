@@ -336,13 +336,19 @@ a:active { text-decoration: none !important; }
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
 }
 
 .not-found-image {
-        border: dotted;
-        border-color: #342316;
-        max-width: 80%;
-        margin-bottom: 20px;
+    border: solid;
+    border-color: #342316;
+    max-width: 80%;
+    margin-bottom: 20px;
+    opacity: 80%; 
+    border-radius: 20px;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);  
 }
 
 .home-page-div {
@@ -352,14 +358,21 @@ a:active { text-decoration: none !important; }
 .home-page-button {
     padding-top: 5px;
     margin-top: 20px;
-    border: dotted;
+    border: solid;
     border-color: #342316;
-    background-color: #EA7BA2;
+    background-color: #070707;
     border-radius: 10px;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);  
 }
 
 .home-page-button-text {
-    color: black;
+    color: rgb(246, 223, 14);
+}
+
+a.home-page-button-text:hover {
+    color: white;
 }
 
 .add-new-card {
