@@ -116,7 +116,7 @@ body {
 }
 
 .homepage_description {
-    border-image: url("./Border.png") 285 / 285px;
+    border-image: url("./TextBorder.png") 285 / 285px;
     border-image-outset: 8px;
     opacity: 85%;
     background-color: #ddb57d;
@@ -278,6 +278,7 @@ padding-top: 100px;
 }
 
 //Header 
+
 .header-container {
     display: flex;
     justify-content: space-evenly;
@@ -297,7 +298,13 @@ padding-top: 100px;
     justify-content: center;
 }
 
-.nav_bar_item{
+.header-buttons {
+    height: 42px;
+    width: 225px;
+    border: solid;
+    border-width: 4px;
+    border-color: #342316;
+    border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 6px;
@@ -305,14 +312,9 @@ padding-top: 100px;
     margin-left: 25px;
     margin-right: 25px;
     background-color: #ea7ba2;
-    border: solid;
-    border-width: 4px;
-    border-color: #342316;
-    border-radius: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
-    width: 225px;
     text-align: center;
     align-items: center;
     -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
@@ -359,19 +361,41 @@ a:active { text-decoration: none !important; }
     color: white;
 }
 
-// not found
-.not-found-container {
-    margin-top: 90px;
+// Not Found
+
+.not-found-background {
+    background-image: url('./Jolteon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 100vh;
+    margin-top: -90px;
 }
 
-.not-found-header {
-    font-size: xx-large;
+.not-found-container {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+}
+
+.not-found-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .not-found-image {
-    border: dotted;
-    border-color: #342316;
-    margin-top: 10px;
+        border: dotted;
+        border-color: #342316;
+        max-width: 80%;
+        margin-bottom: 20px;
+}
+
+.home-page-div {
+    margin-top: 20px;
 }
 
 .home-page-button {
@@ -464,7 +488,7 @@ a:active { text-decoration: none !important; }
     margin-top: 80px;
 }
     
- .show-card-container{
+.show-card-container{
     display: flex;
         justify-content: center;
        
@@ -487,4 +511,65 @@ a:active { text-decoration: none !important; }
     padding-top: 5px;
     border-radius: 30px;
     text-decoration: none;
+}
+
+// update pokemon page 
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.update-page-container {
+    margin-top: 25px;
+    background-image: url("./Umbreon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 110vh;
+    color: white;
+    padding-left: 25px;
+}
+
+label.form-label {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-control {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+// create page
+
+.new-pokemon-page {
+    margin-top: 25px;
+    background-image: url("./Flareon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 110vh;
+    padding-left: 25px;
+}
+
+.form-control {
+    width: 600px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(176, 176, 176);
+}
+
+.mb-3 {
+    color: rgb(255, 255, 255);
 }
