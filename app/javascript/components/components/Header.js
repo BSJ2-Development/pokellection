@@ -14,30 +14,42 @@ const Header = ({
     <>
       <div className="header-container">      
         <Nav>
-          <NavItem className="nav_bar_item">
-            <NavLink className="nav_links" to="/">Home</NavLink>
-          </NavItem>
-          <NavItem className="nav_bar_item">
-            <NavLink  className="nav_links" to="/AboutUs">About Us</NavLink>
-          </NavItem>
+          <button className="header-buttons">
+            <NavItem className="nav_bar_item">
+              <NavLink className="nav_links" to="/">Home</NavLink>
+            </NavItem>
+          </button>
+          <button className="header-buttons">
+            <NavItem className="nav_bar_item">
+              <NavLink  className="nav_links" to="/AboutUs">About Us</NavLink>
+            </NavItem>
+          </button>
           {logged_in &&
             <>
-              <NavItem className="nav_bar_item">
-                <NavLink className="nav_links" to="/mycollection">My Collection</NavLink>
-              </NavItem>
-              <NavItem className="nav_bar_item">
-                <a href={sign_out_route}>Sign Out</a>
-              </NavItem>
+              <button className="header-buttons">
+                <NavItem className="nav_bar_item">
+                  <NavLink className="nav_links" to="/mycollection">My Collection</NavLink>
+                </NavItem>
+              </button>
+              <button className="header-buttons">
+                <NavItem className="nav_bar_item">
+                  <a href={sign_out_route}>Sign Out</a>
+                </NavItem>
+              </button>
             </>
           }
           {!logged_in &&
           <>
-            <NavItem className="nav_bar_item">
-              <a className="nav_links" href={sign_in_route}>Sign In</a>
-            </NavItem>
-            <NavItem className="nav_bar_item">
-              <a className="nav_links" href={new_user_route}>Sign Up</a>
-            </NavItem>
+            <button className="header-buttons">
+              <NavItem className="nav_bar_item">
+                <a className="nav_links" href={sign_in_route}>Sign In</a>
+              </NavItem>
+            </button>
+            <button className="header-buttons">
+              <NavItem className="nav_bar_item">
+                <a className="nav_links" href={new_user_route}>Sign Up</a>
+              </NavItem>
+            </button>
           </>
           }
         </Nav>

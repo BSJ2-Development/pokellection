@@ -1,8 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
-
- 
 const PokemonIndex = ({ pokemons }) => {
 
   return (
@@ -37,7 +35,7 @@ const PokemonIndex = ({ pokemons }) => {
                 </CardBody>
                 <CardBody>
                   <Button>
-                    <NavLink to={`/pokemonshow/:id`}>View More</NavLink>
+                    <NavLink to={`/pokemonshow/${pokemon.id}`}>View More</NavLink>
                   </Button>
                 </CardBody>
               </Card>

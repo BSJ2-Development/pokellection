@@ -37,9 +37,9 @@ const App = (props) => {
     .then((response) => response.json())
     .then(() => readPokemons())
     .catch((error) => console.log(error))
-   }
+  }
 
-   const updatePokemon = (pokemon, id) => {
+  const updatePokemon = (pokemon, id) => {
     fetch(`/pokemons/${id}`, {
       body: JSON.stringify(pokemon),
       headers: {
