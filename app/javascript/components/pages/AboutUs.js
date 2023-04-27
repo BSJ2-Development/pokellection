@@ -9,12 +9,13 @@ import Simonsfav from "../assets/Simonsfav"
 import Brandonsfav from "../assets/Brandonsfav"
 import Jacobsfav from "../assets/Jacobsfav.png"
 import github from "../assets/github.png"
-import linkedin from "../assets/linkedin.png"
+import linkedin2 from "../assets/linkedin2.png"
 const AboutUs = () => {
   
   // TODO - add pictures and bio info(not all available yet).
   return (
     <>
+    <div className='aboutus-page-background'>
       <h1 className='about-us-header' >Learn More About The Dev Team!</h1>
       <div className='about-us-container'>
 
@@ -24,7 +25,7 @@ const AboutUs = () => {
         <div className='about-me-text'>
         <img className='brandon-self-image' src={Brandon} alt='Brandon'/>
         <div className='links-to-social'>
-          <a href='https://www.linkedin.com/in/brandon-ray95/' target="_blank"> <img className='linked-in-right' src={linkedin} alt='jacobs linked in logo'></img></a>        
+          <a href='https://www.linkedin.com/in/brandon-ray95/' target="_blank"> <img className='linked-in-right' src={linkedin2} alt='jacobs linked in logo'></img></a>        
           <a href='https://github.com/BxRay95' target="_blank"> <img className='linked-in-right' src={github} alt='jacobs linked in logo'></img></a>
           </div>
           <p className='brandon-about-me-text'>Hi. I am Brandon.</p>
@@ -42,7 +43,7 @@ const AboutUs = () => {
         <img className='brandon-self-image' src={Simon} alt='Simon'/>
         <div className='links-to-social'>
          <a href='https://www.linkedin.com/in/sdcurry3/' target="_blank"> 
-         <img className='linked-in-right' src={linkedin} alt='jacobs linked in logo'></img></a>
+         <img className='linked-in-right' src={linkedin2} alt='jacobs linked in logo'></img></a>
           <a href='https://github.com/SDCurry3' target="_blank"> 
           <img className='linked-in-right' src={github} alt='jacobs linked in logo'></img></a>
           </div>
@@ -55,13 +56,13 @@ const AboutUs = () => {
       
       <br/>
 
-      <div className='dev-container'>
+      <div className='dev-container-josh'>
         <div className='about-me-image-container'>   </div>
         <div className='about-me-text'>
         <img className='brandon-self-image' src={Josh} alt='Josh'/>
         <div className='links-to-social'>
           <a href='https://www.linkedin.com/in/maurer-joshua/' target="_blank"> 
-          <img className='linked-in-right' src={linkedin} alt='jacobs linked in logo'></img></a>
+          <img className='linked-in-right' src={linkedin2} alt='jacobs linked in logo'></img></a>
               <a href='https://github.com/JoshuaMaurer' target="_blank"> 
               <img className='linked-in-right' src={github} alt='jacobs linked in logo'></img></a>
               </div>
@@ -81,7 +82,7 @@ const AboutUs = () => {
           <img className='brandon-self-image' src={Jacob} alt='Jacob'/>
           <div className='links-to-social'>
           <a href='https://www.linkedin.com/in/jacob-ross96/' target="_blank"> 
-          <img className='linked-in-right' src={linkedin} alt='jacobs linked in logo'></img></a>
+          <img className='linked-in-right' src={linkedin2} alt='jacobs linked in logo'></img></a>
           <a href='https://github.com/JacobR96' target="_blank"> <img className='linked-in-right' src={github} alt='jacobs linked in logo'></img></a>
           </div>
           <p className='brandon-about-me-text'> Hi. I am Jacob.</p>
@@ -93,9 +94,7 @@ const AboutUs = () => {
       
 
       
-
-     
-    
+        </div>
         </div>
     </>
   )

@@ -1,13 +1,26 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-// Color Scheme
-
-
+//  Main Color Scheme
 // #EEE1BC
 // #DDB57D
 // #AD764E
 // #342316
 // #EA7BA2
+
+
+// Aboutus Color Scheme
+// #79CEE0
+// #DFE5F2
+// #336E8C
+// #E8E5C2
+// #8B6470
+
+
+// Cards/Show Page 
+// #96B6B4
+// #BFE4DE
+// #DFF6F0
+// #52B0C5
 
 
 // Homepage
@@ -127,12 +140,23 @@ body {
 
 // About Us page
 
+.aboutus-page-background {
+    background-image: url("./Vaporeon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 370vh;
+}
+
 .about-us-header {
-    margin-top: 90px;
+padding-top: 100px;
+    // margin-top: 90px;
 }
 
 .about-us-container{
-    background-color: #DDB57D;
+    // background-color: #DDB57D;
     border:dotted;
     border-color: #342316;
     margin-left: 50px;
@@ -207,6 +231,7 @@ body {
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
+
 }
 
 .dev-container{
@@ -215,17 +240,41 @@ body {
     align-items:center;
     margin-left:150px ;
     margin-right:150px;
-    height: auto;
+    height: 700px;
     border: dotted;
-    border-color: #342316;
+    border-color: #79CEE0;
+    border-radius: 15px;
     margin-top: 50px;
     margin-bottom:50px ;
-    background-color:#ddb57d;
+    background-color:#336E8C;
+    border-image: url("./Border.png") 410 / 410px;
+    border-image-outset: 18px;
+    opacity: 85%;
+
+}
+.dev-container-josh{
+    display: flex;
+    justify-content:space-around ;
+    align-items:center;
+    margin-left:150px ;
+    margin-right:150px;
+    height: 800px;
+    border: dotted;
+    border-color: #79CEE0;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom:50px ;
+    background-color:#336E8C;
+    border-image: url("./Border.png") 410 / 410px;
+    border-image-outset: 18px;
+    opacity: 85%;
+
 }
 
 .links-to-social{
     display: flex;
     justify-content: center;
+  
 }
 
 //Header 
@@ -381,6 +430,8 @@ a.home-page-button-text:hover {
 
 // Index Page
 
+
+
 .add-new-card {
     margin-top: 25px;
     background-color: #ea7ba2;
@@ -412,8 +463,11 @@ a.home-page-button-text:hover {
     border-radius: 5px 5px 30px 5px;
     background-color: rgb(162, 161, 161);
     font-size: 0.9rem;
-    height: 400px;
+    height: 500px;
+    width: auto;
     overflow: auto;
+  
+
 }
 
 .show-more-button {
@@ -433,6 +487,16 @@ a.home-page-button-text:hover {
 
 // Show Page
 
+.show-page-background{
+    background-image: url("./Glaceon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 92vh;
+}
+
 .show-pokemon-header {
     margin-top: 80px;
 }
@@ -440,6 +504,7 @@ a.home-page-button-text:hover {
 .show-card-container{
     display: flex;
         justify-content: center;
+       
 }
     
 .show-page-buttons {
@@ -452,9 +517,9 @@ a.home-page-button-text:hover {
 .show-page-buttons .button {
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: #ea7ba2;
+    background-color: #52B0C5;
     border:dotted;
-    border-color: #342316;
+    border-color: #DFF6F0;
     text-align: center ;
     padding-top: 5px;
     border-radius: 30px;
