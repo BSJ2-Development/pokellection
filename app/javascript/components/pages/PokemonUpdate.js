@@ -190,7 +190,7 @@ const PokemonUpdate = ({ pokemons, current_user, updatePokemon }) => {
                 />
             </FormGroup>
 
-            <Button onClick={handleSubmit} name="submit">
+            <Button className="submit-button" onClick={handleSubmit} name="submit">
               Submit Update
             </Button>
           </Form>
