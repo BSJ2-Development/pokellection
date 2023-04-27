@@ -6,8 +6,7 @@ const PokemonIndex = ({ pokemons }) => {
   return (
     <>
       <h1 className='index-header'>Pokemon Index</h1>
-
-      <div >
+      <div>
         {pokemons?.map((pokemon, index) => {
           
           return (
