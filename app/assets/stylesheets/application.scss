@@ -147,7 +147,7 @@ body {
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 370vh;
+    height: 410vh;
 }
 
 .about-us-header {
@@ -231,7 +231,6 @@ padding-top: 100px;
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
-
 }
 
 .dev-container{
@@ -247,7 +246,7 @@ padding-top: 100px;
     margin-top: 50px;
     margin-bottom:50px ;
     background-color:#336E8C;
-    border-image: url("./Border.png") 410 / 410px;
+    border-image: url("./TextBorder.png") 410 / 410px;
     border-image-outset: 18px;
     opacity: 85%;
 
@@ -265,16 +264,14 @@ padding-top: 100px;
     margin-top: 50px;
     margin-bottom:50px ;
     background-color:#336E8C;
-    border-image: url("./Border.png") 410 / 410px;
+    border-image: url("./TextBorder.png") 410 / 410px;
     border-image-outset: 18px;
     opacity: 85%;
-
 }
 
 .links-to-social{
     display: flex;
     justify-content: center;
-  
 }
 
 //Header 
@@ -466,8 +463,6 @@ a.home-page-button-text:hover {
     height: 500px;
     width: auto;
     overflow: auto;
-  
-
 }
 
 .show-more-button {
@@ -504,7 +499,6 @@ a.home-page-button-text:hover {
 .show-card-container{
     display: flex;
         justify-content: center;
-       
 }
     
 .show-page-buttons {

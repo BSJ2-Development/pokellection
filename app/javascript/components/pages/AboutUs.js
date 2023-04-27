@@ -29,7 +29,7 @@ const AboutUs = () => {
           <a href='https://github.com/BxRay95' target="_blank"> <img className='linked-in-right' src={github} alt='jacobs linked in logo'></img></a>
           </div>
           <p className='brandon-about-me-text'>Hi. I am Brandon.</p>
-          <p className='bio-section' > I was the Tech Lead for Pokellection. I am 27 years old and I enjoy my free time at the lake in my kayaks or playing video games. My favorite pokemon has and always will be Eevee.</p> 
+          <p className='bio-section' > I'm the Tech Lead for Pokellection. I am 27 years old and I enjoy my free time at the lake in my kayaks or playing video games. My favorite pokemon has and always will be Eevee.</p> 
           <p>Favorite pokemon: Eevee</p>
           <img className='fav_pokemon' src='https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png'/>
         </div>
@@ -42,8 +42,8 @@ const AboutUs = () => {
         <div className='about-me-text'>
         <img className='brandon-self-image' src={Simon} alt='Simon'/>
         <div className='links-to-social'>
-         <a href='https://www.linkedin.com/in/sdcurry3/' target="_blank"> 
-         <img className='linked-in-right' src={linkedin2} alt='jacobs linked in logo'></img></a>
+        <a href='https://www.linkedin.com/in/sdcurry3/' target="_blank"> 
+        <img className='linked-in-right' src={linkedin2} alt='jacobs linked in logo'></img></a>
           <a href='https://github.com/SDCurry3' target="_blank"> 
           <img className='linked-in-right' src={github} alt='jacobs linked in logo'></img></a>
           </div>
@@ -85,10 +85,10 @@ const AboutUs = () => {
           <img className='linked-in-right' src={linkedin2} alt='jacobs linked in logo'></img></a>
           <a href='https://github.com/JacobR96' target="_blank"> <img className='linked-in-right' src={github} alt='jacobs linked in logo'></img></a>
           </div>
-          <p className='brandon-about-me-text'> Hi. I am Jacob.</p>
-          <p className='bio-section' >I'm the Design Lead for Pokellection. I am a experienced developer with skills in HTML, CSS, Javascript, Node, React, Express.js, APIs, and Git/Github. I am  also certified in technical support, computer networking, and AWS Cloud technologies. Previously I have worked as an Information Management Officer and Help Desk Technician at MSM Technology, LLC. </p> 
-           <p>Favorite Pokemon:Ninetales</p>  
-           <img className='fav_pokemon' src={Jacobsfav}/>
+            <p className='brandon-about-me-text'> Hi. I am Jacob.</p>
+            <p className='bio-section' >I'm the Design Lead for Pokellection. I am an experienced Developer with skills in HTML, CSS, Javascript, Node, React, Express.js, APIs, and Git/Github. I am certified in technical support, computer networking, and AWS Cloud technologies. Previously I worked as an Information Management Officer and Help Desk Technician at MSM Technology, LLC  </p> 
+            <p>Favorite Pokemon:Ninetales</p>  
+          <img className='fav_pokemon' src={Jacobsfav}/>
         </div>
       </div>
       
