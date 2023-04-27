@@ -20,6 +20,7 @@ const PokemonShowPage = ({ pokemons, deletePokemon }) => {
     <>
       {selectedPokemon && (
         <>
+        <div className='show-page-background'>
           <h1 className='show-pokemon-header'>{selectedPokemon.pokemon_name}</h1>
           <div className='show-card-container'>
             <Card style={{width: '18rem'}} className='show-page-card'>
@@ -72,7 +73,8 @@ const PokemonShowPage = ({ pokemons, deletePokemon }) => {
             <Button className='button'>
               <NavLink to='/pokemonindex'>Pokedex</NavLink>
             </Button>
-          </div>  
+          </div> 
+           </div>
         </>
       )}
     </>
