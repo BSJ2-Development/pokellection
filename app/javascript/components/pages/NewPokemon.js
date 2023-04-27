@@ -170,7 +170,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
               />
           </FormGroup>
       
-          <Button onClick={handleSubmit} name="submit">
+          <Button className='submit-button' onClick={handleSubmit} name="submit">
                 Submit
           </Button>
         </Form>

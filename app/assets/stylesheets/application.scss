@@ -287,7 +287,6 @@ padding-top: 100px;
     top: 0;
     width: 100%;
     z-index: 1;
-    opacity: 80%;
 }
 
 .nav_bar_item.nav-item{
@@ -367,7 +366,7 @@ a:active { text-decoration: none !important; }
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 100vh;
+    height: 110vh;
     margin-top: -90px;
 }
 
@@ -427,7 +426,9 @@ a.home-page-button-text:hover {
 
 // Index Page
 
-
+.index-header {
+    padding-top: 80px;
+}
 
 .add-new-card {
     margin-top: 25px;
@@ -489,7 +490,8 @@ a.home-page-button-text:hover {
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 92vh;
+    height: 98vh;
+    padding-top: 30px;
 }
 
 .show-pokemon-header {
@@ -523,9 +525,14 @@ a.home-page-button-text:hover {
 // update pokemon page 
 
 .form{
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.submit-button {
+    width: 200px;
 }
 
 .update-page-container {
@@ -536,7 +543,7 @@ a.home-page-button-text:hover {
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 110vh;
+    height: 120vh;
     color: white;
     padding-left: 25px;
 }
@@ -556,7 +563,7 @@ label.form-label {
 // create page
 
 .new-pokemon-page {
-    margin-top: 25px;
+    margin-top: 65px;
     background-image: url("./Flareon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
