@@ -13,48 +13,35 @@ const Header = ({
   return (
     <>
       <div className="header-container">      
-        <Nav>
-          <button className="header-buttons">
-            <NavItem className="nav_bar_item">
-              <NavLink className="nav_links" to="/">Home</NavLink>
+        <Nav>         
+            <NavItem>
+              <NavLink className="header-buttons" to="/">Home</NavLink>
+            </NavItem>         
+            <NavItem>
+              <NavLink  className="header-buttons" to="/AboutUs">About Us</NavLink>
+            </NavItem>         
+            <NavItem>
+              <NavLink  className="header-buttons" to="/pokemonindex">Pokellection</NavLink>
             </NavItem>
-          </button>
-          <button className="header-buttons">
-            <NavItem className="nav_bar_item">
-              <NavLink  className="nav_links" to="/AboutUs">About Us</NavLink>
-            </NavItem>
-          </button>
-          <button className="header-buttons">
-            <NavItem className="nav_bar_item">
-              <NavLink  className="nav_links" to="/pokemonindex">Pokellection</NavLink>
-            </NavItem>
-          </button>
           {logged_in &&
-            <>
-              <button className="header-buttons">
-                <NavItem className="nav_bar_item">
-                  <NavLink className="nav_links" to="/mycollection">My Collection</NavLink>
-                </NavItem>
-              </button>
-              <button className="header-buttons">
-                <NavItem className="nav_bar_item">
-                  <a href={sign_out_route}>Sign Out</a>
-                </NavItem>
-              </button>
+            <>             
+                <NavItem>
+                  <NavLink className="header-buttons" to="/mycollection">My Collection</NavLink>
+                </NavItem>  
+              
+                <NavItem>
+                  <a className="header-buttons" href={sign_out_route}>Sign Out</a>
+                </NavItem> 
             </>
           }
           {!logged_in &&
-          <>
-            <button className="header-buttons">
-              <NavItem className="nav_bar_item">
-                <a className="nav_links" href={sign_in_route}>Sign In</a>
+          <>           
+              <NavItem>
+                <a className="header-buttons" href={sign_in_route}>Sign In</a>
+              </NavItem>           
+              <NavItem>
+                <a className="header-buttons" href={new_user_route}>Sign Up</a>
               </NavItem>
-            </button>
-            <button className="header-buttons">
-              <NavItem className="nav_bar_item">
-                <a className="nav_links" href={new_user_route}>Sign Up</a>
-              </NavItem>
-            </button>
           </>
           }
         </Nav>

@@ -288,13 +288,10 @@ padding-top: 100px;
     width: 100%;
     z-index: 1;
 }
-
-.nav_bar_item.nav-item{
+    
+.header-buttons {
     display: flex;
     justify-content: center;
-}
-
-.header-buttons {
     height: 42px;
     width: 225px;
     border: solid;
@@ -422,6 +419,7 @@ a.home-page-button-text:hover {
 
 .add-new-card {
     margin-top: 80px;
+    background-color: #9a5caf;
 }
 
 // Index Page
@@ -444,7 +442,6 @@ a.home-page-button-text:hover {
     background-attachment: fixed;
     object-fit: contain;
     height: 1650vh;
-    padding-top: 30px;
 }
 
 .protected-index-cards .card {
@@ -491,7 +488,7 @@ a.home-page-button-text:hover {
 
 .add-new-card {
     margin-top: 25px;
-    background-color: #ea7ba2;
+    background-color: #d39ede;
     border: solid;
     border-color: #342316;
     text-align: center ;
@@ -503,8 +500,12 @@ a.home-page-button-text:hover {
     box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
 }
 
-.add-new-card a {
-    color: black;
+.add-new-card a:hover {
+    color: rgb(243, 198, 240);
+}
+
+button.add-new-card:hover {
+    color: rgb(243, 198, 240);
 }
 
 .index-cards {
@@ -571,23 +572,6 @@ a.home-page-button-text:hover {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 5px;
-}
-
-.view-button-mycollection {
-    align-self: center;
-    background-color: #b567c0;
-    border: solid;
-    width: 100px;
-    height: 30px;
-    border-color: #342316;
-    text-align: center ;
-    padding-top: 5px;
-    border-radius: 30px;
-    text-decoration: none;
-    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
-    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
-    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
-    padding: 2px 5px;
 }
 
 .pokemon-image {
@@ -692,6 +676,12 @@ a.home-page-button-text:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.create-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .submit-button {
