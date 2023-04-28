@@ -14,7 +14,7 @@ const PokemonIndex = ({ allApiPokemons }) => {
 
   return (
     <>
-      
+      <div className='unprotected-index-page'>
         <h1 className='index-header'>Pokemon Index</h1>
         <p>Click Image To View Pokemon Stats</p>
         <div className='index-cards'>
@@ -23,7 +23,6 @@ const PokemonIndex = ({ allApiPokemons }) => {
               <Card
                 key={index}
                 style={{width: '18rem'}}
-                
                 >
                 <CardText>
                   No. {pokemonApi.id}
@@ -44,10 +43,14 @@ const PokemonIndex = ({ allApiPokemons }) => {
                     {/* Nickname: {pokemon.pokemon_nickname} */}
                   </CardText>
                 </CardBody>
+                <Button className='view-button'>
+                  <NavLink to={`/pokemonshow/${pokemonApi.id}`}>View</NavLink>
+                </Button>
               </Card>
             )
           })}
         </div>
+      </div>
     </>
   )
 }
