@@ -432,7 +432,7 @@ a.home-page-button-text:hover {
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 200vh;
+    height: 1650vh;
     padding-top: 30px;
 }
 
@@ -624,17 +624,24 @@ a.home-page-button-text:hover {
 
 .submit-button {
     width: 200px;
+    color: black;
+    background-color: red;
+}
+
+.submit-button:hover {
+    background-color: #e1ec19;
+    color: black;
 }
 
 .update-page-container {
     margin-top: 25px;
-    background-image: url("./Umbreon.jpg");
+    background-image: url("./Umbreon.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 120vh;
+    height: 130vh;
     color: white;
     padding-left: 25px;
 }
