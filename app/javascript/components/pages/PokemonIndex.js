@@ -1,8 +1,10 @@
 import React from 'react'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
+import SearchBar from '../components/SearchBar'
+import mockPokemon from '../mockPokemon'
 // const PokemonIndex = ({ pokemons, idApi, nameApi, imageApi }) => {
-const PokemonIndex = ({ allApiPokemons }) => {
+const PokemonIndex = ({ allApiPokemons,Placeholder }) => {
 
   const navigate = useNavigate()
   
@@ -11,12 +13,18 @@ const PokemonIndex = ({ allApiPokemons }) => {
   const navigateShow = () => {
     navigate(`/pokemonshow/${id}`)
   }
-
   return (
     <>
+    
+    
+    
       <div className='unprotected-index-page'>
+        <div className="App">
+          <SearchBar placeholder="Enter a Book Name..." data={allApiPokemons} />
+        </div>
         <h1 className='index-header'>Pokemon Index</h1>
         <div className='index-cards'>
+          {/* <SearchBar /> */}
         {allApiPokemons?.map((pokemonApi, index) => {
             return(
               <Card
