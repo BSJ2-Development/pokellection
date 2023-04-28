@@ -72,11 +72,6 @@ const PokemonShowPage = ({ pokemons, deletePokemon, logged_in }) => {
                 </Button>
               </div> 
             )}      
-            <div className='show-page-buttons'>
-              <Button className='button'>
-                <NavLink to='/pokemonindex'>Pokedex</NavLink>
-              </Button>
-            </div>
           </div>
         </>
       )}

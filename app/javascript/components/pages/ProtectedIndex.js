@@ -14,34 +14,34 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
           <button className='add-new-card'>
             <NavLink to='/pokemonnew'>Add a New Card</NavLink>
           </button>
-        <div className='index-cards'>
+        <div className='protected-index-cards'>
           {myPokemon?.map((pokemon, index) => {
             return(
               <Card
                 key={index}
                 style={{width: '18rem'}}
                 >
+                <CardText>
+                  No. {pokemon.pokedex_entry}
+                </CardText>
                 <img
                 alt={pokemon.pokemon_name}
                 src={pokemon.image}
                 />
                 <CardBody>
-                  <CardText>
-                    No. {pokemon.pokedex_entry}
-                  </CardText>
-                  <CardTitle tag="h4">
-                    Name: {pokemon.pokemon_name}
+                  <CardTitle tag="h5">
+                    {pokemon.pokemon_name.toUpperCase()}
                   </CardTitle>
                   <CardText>
-                    {pokemon.pokemon_type} type
+                    {pokemon.pokemon_type} Type
                   </CardText>
-                  <CardText tag="h5">
+                  <CardText tag="h6">
                     Nickname: {pokemon.pokemon_nickname}
                   </CardText>
                 </CardBody>
                 <CardBody>
-                  <Button>
-                    <NavLink to={`/pokemonshow/${pokemon.id}`}>View More</NavLink>
+                  <Button className='view-button-mycollection'>
+                    <NavLink to={`/pokemonshow/${pokemon.id}`}>View</NavLink>
                   </Button>
                 </CardBody>
               </Card>
