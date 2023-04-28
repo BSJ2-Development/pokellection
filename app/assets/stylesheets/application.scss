@@ -425,6 +425,27 @@ a.home-page-button-text:hover {
 }
 
 // Index Page
+.unprotected-index-page {
+    background-image: url("./Leafeon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 200vh;
+    padding-top: 30px;
+}
+
+.protected-index-page {
+    background-image: url("./Espeon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+    height: 200vh;
+    padding-top: 80px;
+}
 
 .index-header {
     padding-top: 80px;
@@ -433,12 +454,15 @@ a.home-page-button-text:hover {
 .add-new-card {
     margin-top: 25px;
     background-color: #ea7ba2;
-    border:dotted;
+    border: solid;
     border-color: #342316;
     text-align: center ;
     padding-top: 5px;
     border-radius: 30px;
     text-decoration: none;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
 }
 
 .add-new-card a {
@@ -456,35 +480,59 @@ a.home-page-button-text:hover {
     padding: 15px;
 }
 
+.index-cards.card-body {
+    margin-bottom: -25px;
+}
+
 .card {
-  padding: 10px;
-  border-radius: 8px 8px 50px 8px;
-  background-color: rgb(162, 161, 161);
-  font-size: 0.9rem;
-  height: 400px;
-  width: auto;
-  overflow: auto;
-  border: solid;
-  border-color: #342316;
-  -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
-  -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
-  box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    padding: 10px;
+    border-radius: 8px 8px 50px 8px;
+    background-color: rgb(162, 161, 161);
+    font-size: 0.9rem;
+    height: 400px;
+    width: auto;
+    overflow: auto;
+    border: solid;
+    border-color: #342316;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
 }
 
 .index-cards .card img {
-  object-fit: contain;
-  height: 200px;
-  width: 200px;
-  margin: 0 auto;
-  padding: 20px;
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.show-more-button {
-    background-color: #ea7ba2;
+.view-button{
+    align-self: center;
+    background-color: #2ed897;
+    border: solid;
+    width: 100px;
+    height: 30px;
+    border-color: #342316;
+    text-align: center ;
+    padding-top: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
+    padding: 2px 5px;
 }
 
-.show-more-button a {
-    color:black;
+.view-button a {
+    color: black;
+}
+
+.view-button a:hover {
+    color:rgb(27, 130, 74);
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5px;
 }
 
 .pokemon-image {
@@ -497,18 +545,18 @@ a.home-page-button-text:hover {
 // Show Page
 
 .show-page-background{
-    background-image: url("./Glaceon.png");
+    background-image: url('./Glaceon.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 98vh;
+    height: 104vh;
     padding-top: 30px;
 }
 
 .show-pokemon-header {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
     
@@ -521,7 +569,7 @@ a.home-page-button-text:hover {
     -webkit-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
     box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
-    width: 400px;
+    height: 540px;
 }
 
 .show-page-card.card .card-text {
@@ -543,7 +591,7 @@ a.home-page-button-text:hover {
 
 .show-page-buttons {
     margin-bottom: 45px;
-    padding-top: 55px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     gap: 50px;

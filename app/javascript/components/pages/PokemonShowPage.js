@@ -20,59 +20,60 @@ const PokemonShowPage = ({ pokemons, deletePokemon }) => {
     <>
       {selectedPokemon && (
         <>
-          <h1 className='show-pokemon-header'>{selectedPokemon.pokemon_name}</h1>
-          <div className='show-card-container'>
-            <Card style={{width: '18rem'}} className='show-page-card'>
-              <CardTitle>
-                No. {selectedPokemon.pokedex_entry}
-              </CardTitle>
-              <img
-              alt={selectedPokemon.pokemon_name}
-              src={selectedPokemon.image}
-              />
-              <CardBody>
-                <CardTitle tag="h5">
-                {selectedPokemon.pokemon_name}
-                </CardTitle>
+          <div className='show-page-background'>
+            <h1 className='show-pokemon-header'>{selectedPokemon.pokemon_name}</h1>
+            <div className='show-card-container'>
+              <Card style={{width: '18rem'}} className='show-page-card'>
                 <CardTitle>
-                  {selectedPokemon.pokemon_type} Type
+                  No. {selectedPokemon.pokedex_entry}
                 </CardTitle>
-                <CardText tag="h5">
-                  Nickname: {selectedPokemon.pokemon_nickname}
-                </CardText>
-                <CardText tag="h5">
-                  HP: {selectedPokemon.hp}
-                </CardText>
-                <CardText tag="h5">
-                  Height: {selectedPokemon.height} cm
-                </CardText>
-                <CardText tag="h5">
-                  Weight: {selectedPokemon.weight} kg
-                </CardText>
-                <CardText tag="h5">
-                  Ability: {selectedPokemon.ability} 
-                </CardText>
-                <CardText tag="h5">
-                  Version: {selectedPokemon.pokemon_version}
-                </CardText>
-              </CardBody>
-            </Card>
-          </div>       
-          <div className='show-page-buttons'>
-            <Button className='button'>
-              <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Update Pokemon</NavLink>
-            </Button>
-            <Button className='button' onClick={handleSubmit}>
-              <NavLink to="/mycollection">Delete Pokemon</NavLink>
-            </Button>
-            <Button className='button'>
-              <NavLink to='/mycollection'>My Pokemon</NavLink>
-            </Button>
+                <img
+                alt={selectedPokemon.pokemon_name}
+                src={selectedPokemon.image}
+                />
+                <CardBody>
+                  <CardTitle tag="h5">
+                  {selectedPokemon.pokemon_name}
+                  </CardTitle>
+                  <CardTitle>
+                    {selectedPokemon.pokemon_type} Type
+                  </CardTitle>
+                  <CardText tag="h5">
+                    Nickname: {selectedPokemon.pokemon_nickname}
+                  </CardText>
+                  <CardText tag="h5">
+                    HP: {selectedPokemon.hp}
+                  </CardText>
+                  <CardText tag="h5">
+                    Height: {selectedPokemon.height} cm
+                  </CardText>
+                  <CardText tag="h5">
+                    Weight: {selectedPokemon.weight} kg
+                  </CardText>
+                  <CardText tag="h5">
+                    Ability: {selectedPokemon.ability} 
+                  </CardText>
+                  <CardText tag="h5">
+                    Version: {selectedPokemon.pokemon_version}
+                  </CardText>
+                </CardBody>
+              </Card>
+            </div>       
+            <div className='show-page-buttons'>
+              <Button className='button'>
+                <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Update Pokemon</NavLink>
+              </Button>
+              <Button className='button' onClick={handleSubmit}>
+                <NavLink to="/mycollection">Delete Pokemon</NavLink>
+              </Button>
+              <Button className='button'>
+                <NavLink to='/mycollection'>My Pokemon</NavLink>
+              </Button>
 
-            <Button className='button'>
-              <NavLink to='/pokemonindex'>Pokedex</NavLink>
-            </Button>
-          </div> 
+              <Button className='button'>
+                <NavLink to='/pokemonindex'>Pokedex</NavLink>
+              </Button>
+            </div> 
           </div>
         </>
       )}
