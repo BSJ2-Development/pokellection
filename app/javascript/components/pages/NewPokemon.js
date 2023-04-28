@@ -6,7 +6,7 @@ import {
   Input, 
   Button 
 } from 'reactstrap'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 
 const NewPokemon = ({ current_user, createPokemons}) => {
@@ -169,10 +169,14 @@ const NewPokemon = ({ current_user, createPokemons}) => {
                 onChange={handleChange}
               />
           </FormGroup>
-      
+          <div className='create-buttons'>
           <Button className='submit-button' onClick={handleSubmit} name="submit">
                 Submit
           </Button>
+          <Button className='submit-button' >
+            <NavLink to='/mycollection'>Cancel</NavLink>
+          </Button>
+          </div>
         </Form>
       </div>
     </>
