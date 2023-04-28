@@ -16,7 +16,6 @@ const PokemonIndex = ({ allApiPokemons }) => {
     <>
       <div className='unprotected-index-page'>
         <h1 className='index-header'>Pokemon Index</h1>
-        <p>Click Image To View Pokemon Stats</p>
         <div className='index-cards'>
         {allApiPokemons?.map((pokemonApi, index) => {
             return(

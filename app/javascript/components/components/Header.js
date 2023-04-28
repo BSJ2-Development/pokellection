@@ -24,6 +24,11 @@ const Header = ({
               <NavLink  className="nav_links" to="/AboutUs">About Us</NavLink>
             </NavItem>
           </button>
+          <button className="header-buttons">
+            <NavItem className="nav_bar_item">
+              <NavLink  className="nav_links" to="/pokemonindex">Pokellection</NavLink>
+            </NavItem>
+          </button>
           {logged_in &&
             <>
               <button className="header-buttons">
