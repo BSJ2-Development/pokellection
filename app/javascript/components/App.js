@@ -64,6 +64,32 @@ const App = (props) => {
     .catch((error) => console.log(error));
   }
 
+
+
+  const [allApiPokemons,setAllApiPokemons] = useState([]);
+
+  const [loadApiPokemon,setApiLoadPokemon] = useState('https://pokeapi.co/api/v2/pokemon?limit=151');
+
+  const getAllApiPokemons = async () =>{
+    const response = await fetch(loadApiPokemon)
+    const data = await response.json()
+    setApiLoadPokemon(data.next)
+  
+    const createApiPokemonObject = (result) => {
+      result.forEach(async (apiPokemon) => {
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${apiPokemon.name}`)
+        const data = await response.json();
+        setAllApiPokemons(currentApiPokemon => [...currentApiPokemon, data])
+      });
+    }
+    createApiPokemonObject(data.results)
+    await console.log(allApiPokemons)
+  }
+
+  useEffect(()=>{
+    getAllApiPokemons()
+  },[])
+
   return (
     <>
       <BrowserRouter>
@@ -71,7 +97,15 @@ const App = (props) => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/aboutus' element={<AboutUs />} />
-          <Route path='/pokemonindex' element={<PokemonIndex pokemons={pokemons}/>} />
+          <Route path='/pokemonindex' element={
+            <PokemonIndex 
+              pokemons={pokemons} 
+              allApiPokemons={allApiPokemons} 
+
+              // idApi={apiPokemon.id}
+              // nameApi={apiPokemon.name}
+              // imageApi={apiPokemon.sprites.other.dream_world.front_default}
+            />} />
           <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} deletePokemon={deletePokemon}/> } />
           <Route path="/pokemonupdate/:id" element={<PokemonUpdate pokemons={pokemons} updatePokemon={updatePokemon}/>} />
           <Route path='/pokemonnew' element={<NewPokemon createPokemons={createPokemons} current_user={props.current_user}/>} />

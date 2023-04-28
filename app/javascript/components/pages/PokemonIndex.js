@@ -1,47 +1,53 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
-const PokemonIndex = ({ pokemons }) => {
+// const PokemonIndex = ({ pokemons, idApi, nameApi, imageApi }) => {
+const PokemonIndex = ({ allApiPokemons }) => {
+
+  const navigate = useNavigate()
+  
+  const { id } = useParams()
+
+  const navigateShow = () => {
+    navigate(`/pokemonshow/${id}`)
+  }
 
   return (
     <>
-      <h1 className='index-header'>Pokemon Index</h1>
-      <div>
-        {pokemons?.map((pokemon, index) => {
-          
-          return (
-            <div className='index-cards'>
+      
+        <h1 className='index-header'>Pokemon Index</h1>
+        <p>Click Image To View Pokemon Stats</p>
+        <div className='index-cards'>
+        {allApiPokemons?.map((pokemonApi, index) => {
+            return(
               <Card
                 key={index}
-                style={{width: '18rem'}}>
-                <img
-                alt={pokemon.pokemon_name}
-                src={pokemon.image}
-                />
+                style={{width: '18rem'}}
+                
+                >
+                <CardText>
+                  No. {pokemonApi.id}
+                </CardText>  
+                  <img
+                  src={pokemonApi.sprites.other.dream_world.front_default}
+                  alt={pokemonApi.name}
+                  onClick={navigateShow}
+                  />
                 <CardBody>
-                  <CardText>
-                    No. {pokemon.pokedex_entry}
-                  </CardText>
-                  <CardTitle tag="h4">
-                    Name: {pokemon.pokemon_name}
+                  <CardTitle tag="h5">
+                    {pokemonApi.name.toUpperCase()}
                   </CardTitle>
                   <CardText>
-                    {pokemon.pokemon_type} type
+                  {pokemonApi.types[0].type.name} type
                   </CardText>
-                  <CardText tag="h5">
-                    Nickname: {pokemon.pokemon_nickname}
+                  <CardText tag="h6">
+                    {/* Nickname: {pokemon.pokemon_nickname} */}
                   </CardText>
-                </CardBody>
-                <CardBody>
-                  <Button>
-                    <NavLink to={`/pokemonshow/${pokemon.id}`}>View More</NavLink>
-                  </Button>
                 </CardBody>
               </Card>
-            </div>
-          )
-        })}
-      </div>
+            )
+          })}
+        </div>
     </>
   )
 }
