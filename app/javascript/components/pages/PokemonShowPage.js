@@ -23,20 +23,20 @@ const PokemonShowPage = ({ pokemons, deletePokemon }) => {
           <h1 className='show-pokemon-header'>{selectedPokemon.pokemon_name}</h1>
           <div className='show-card-container'>
             <Card style={{width: '18rem'}} className='show-page-card'>
+              <CardTitle>
+                No. {selectedPokemon.pokedex_entry}
+              </CardTitle>
               <img
               alt={selectedPokemon.pokemon_name}
               src={selectedPokemon.image}
               />
               <CardBody>
-                <CardText>
-                  No. {selectedPokemon.pokedex_entry}
-                </CardText>
-                <CardTitle tag="h4">
-                  Name: {selectedPokemon.pokemon_name}
+                <CardTitle tag="h5">
+                {selectedPokemon.pokemon_name}
                 </CardTitle>
-                <CardText>
-                  {selectedPokemon.pokemon_type} type
-                </CardText>
+                <CardTitle>
+                  {selectedPokemon.pokemon_type} Type
+                </CardTitle>
                 <CardText tag="h5">
                   Nickname: {selectedPokemon.pokemon_nickname}
                 </CardText>
@@ -72,7 +72,8 @@ const PokemonShowPage = ({ pokemons, deletePokemon }) => {
             <Button className='button'>
               <NavLink to='/pokemonindex'>Pokedex</NavLink>
             </Button>
-          </div>  
+          </div> 
+          </div>
         </>
       )}
     </>
