@@ -106,7 +106,7 @@ const App = (props) => {
               // nameApi={apiPokemon.name}
               // imageApi={apiPokemon.sprites.other.dream_world.front_default}
             />} />
-          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} deletePokemon={deletePokemon}/> } />
+          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} {...props} deletePokemon={deletePokemon}/> } />
           <Route path="/pokemonupdate/:id" element={<PokemonUpdate pokemons={pokemons} updatePokemon={updatePokemon}/>} />
           <Route path='/pokemonnew' element={<NewPokemon createPokemons={createPokemons} current_user={props.current_user}/>} />
           <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />

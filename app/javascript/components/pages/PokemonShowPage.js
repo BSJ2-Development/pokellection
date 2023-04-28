@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, NavLink, useNavigate } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
-const PokemonShowPage = ({ pokemons, deletePokemon }) => {
+const PokemonShowPage = ({ pokemons, deletePokemon, logged_in }) => {
 
     const { id } = useParams()
 
@@ -58,22 +58,25 @@ const PokemonShowPage = ({ pokemons, deletePokemon }) => {
                   </CardText>
                 </CardBody>
               </Card>
-            </div>       
+            </div> 
+            {logged_in && (
+              <div className='show-page-buttons'>
+                <Button className='button'>
+                  <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Update Pokemon</NavLink>
+                </Button>
+                <Button className='button' onClick={handleSubmit}>
+                  <NavLink to="/mycollection">Delete Pokemon</NavLink>
+                </Button>
+                <Button className='button'>
+                  <NavLink to='/mycollection'>My Pokemon</NavLink>
+                </Button>
+              </div> 
+            )}      
             <div className='show-page-buttons'>
-              <Button className='button'>
-                <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Update Pokemon</NavLink>
-              </Button>
-              <Button className='button' onClick={handleSubmit}>
-                <NavLink to="/mycollection">Delete Pokemon</NavLink>
-              </Button>
-              <Button className='button'>
-                <NavLink to='/mycollection'>My Pokemon</NavLink>
-              </Button>
-
               <Button className='button'>
                 <NavLink to='/pokemonindex'>Pokedex</NavLink>
               </Button>
-            </div> 
+            </div>
           </div>
         </>
       )}
