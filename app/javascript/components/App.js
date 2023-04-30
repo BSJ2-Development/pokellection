@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound"
 import PokemonShowPage from "./pages/PokemonShowPage"
 import NewPokemon from './pages/NewPokemon'
 import PokemonUpdate from "./pages/PokemonUpdate"
+import SearchBar from "./components/SearchBar"
 
 
 const App = (props) => {
@@ -68,7 +69,7 @@ const App = (props) => {
 
   const [allApiPokemons,setAllApiPokemons] = useState([]);
 
-  const [loadApiPokemon,setApiLoadPokemon] = useState('https://pokeapi.co/api/v2/pokemon?limit=151');
+  const [loadApiPokemon,setApiLoadPokemon] = useState('https://pokeapi.co/api/v2/pokemon?limit=200');
 
   const getAllApiPokemons = async () =>{
     const response = await fetch(loadApiPokemon)
@@ -106,10 +107,11 @@ const App = (props) => {
               // nameApi={apiPokemon.name}
               // imageApi={apiPokemon.sprites.other.dream_world.front_default}
             />} />
-          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} {...props} deletePokemon={deletePokemon}/> } />
+          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} allApiPokemons={allApiPokemons}  {...props} deletePokemon={deletePokemon}/> } />
           <Route path="/pokemonupdate/:id" element={<PokemonUpdate pokemons={pokemons} updatePokemon={updatePokemon}/>} />
           <Route path='/pokemonnew' element={<NewPokemon createPokemons={createPokemons} current_user={props.current_user}/>} />
           <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
+          <Route path='pokemonshow/:id' element={<SearchBar pokemons={pokemons} allApiPokemons={allApiPokemons}/>} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

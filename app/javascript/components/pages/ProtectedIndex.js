@@ -29,12 +29,12 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
                 src={pokemon.image}
                 />
                 <CardBody>
+                  <CardText>
+                    {pokemon.pokemon_type.toUpperCase()} TYPE
+                  </CardText>
                   <CardTitle tag="h5">
                     {pokemon.pokemon_name.toUpperCase()}
                   </CardTitle>
-                  <CardText>
-                    {pokemon.pokemon_type} Type
-                  </CardText>
                   <CardText tag="h6">
                     Nickname: {pokemon.pokemon_nickname}
                   </CardText>

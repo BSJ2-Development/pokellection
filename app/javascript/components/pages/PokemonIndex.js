@@ -40,14 +40,13 @@ const PokemonIndex = ({ allApiPokemons, placeholder }) => {
                   onClick={navigateShow}
                   />
                 <CardBody>
+                  <CardText>
+                  {pokemonApi.types[0].type.name.toUpperCase()} TYPE
+                  </CardText>
                   <CardTitle tag="h5">
                     {pokemonApi.name.toUpperCase()}
                   </CardTitle>
-                  <CardText>
-                  {pokemonApi.types[0].type.name} type
-                  </CardText>
                   <CardText tag="h6">
-                    {/* Nickname: {pokemon.pokemon_nickname} */}
                   </CardText>
                   </CardBody>
                     <NavLink className='view-button' to={`/pokemonshow/${pokemonApi.id}`}>View</NavLink>
