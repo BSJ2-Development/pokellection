@@ -18,6 +18,7 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
           {myPokemon?.map((pokemon, index) => {
             return(
               <Card
+                className={pokemon.pokemon_type}
                 key={index}
                 style={{width: '18rem'}}
                 >
