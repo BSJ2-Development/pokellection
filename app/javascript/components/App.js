@@ -69,7 +69,7 @@ const App = (props) => {
 
   const [allApiPokemons,setAllApiPokemons] = useState([]);
 
-  const [loadApiPokemon,setApiLoadPokemon] = useState('https://pokeapi.co/api/v2/pokemon?limit=200');
+  const [loadApiPokemon,setApiLoadPokemon] = useState('https://pokeapi.co/api/v2/pokemon?limit=251');
 
   const getAllApiPokemons = async () =>{
     const response = await fetch(loadApiPokemon)

@@ -24,7 +24,8 @@ const PokemonShowPage = ({ deletePokemon, logged_in, allApiPokemons }) => {
             <div className='show-card-container'>
               <Card 
               style={{width: '18rem'}} 
-              className='show-page-card'
+              // className='show-page-card'
+              className={selectedPokemon.types[0].type.name}
               >
                 <CardTitle>
                   No. {selectedPokemon.id}
