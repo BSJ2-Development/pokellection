@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from "react-router-dom"
+import brand_icon from "../../../assets/images/brand_icon.png"
 
 const Header = ({
   logged_in, 
@@ -12,8 +13,9 @@ const Header = ({
 
   return (
     <>
-      <div className="header-container">      
+      <div className="header-container">     
         <Nav>         
+          <img className="pokeball-navbar-left" src={brand_icon} alt='pokeball-image'/>
             <NavItem>
               <NavLink className="header-buttons" to="/">Home</NavLink>
             </NavItem>         
@@ -44,6 +46,7 @@ const Header = ({
               </NavItem>
           </>
           }
+          <img className="pokeball-navbar-right" src={brand_icon} alt='pokeball-image'/>
         </Nav>
       </div>
     </>
