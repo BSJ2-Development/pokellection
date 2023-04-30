@@ -11,7 +11,7 @@ const PokemonIndex = ({ allApiPokemons, placeholder }) => {
   const { id } = useParams()
 
   const navigateShow = () => {
-    navigate(`/pokemonshow/${id}`)
+    navigate(`/unprotectedshow/${id}`)
   }
   return (
     <>
@@ -50,7 +50,7 @@ const PokemonIndex = ({ allApiPokemons, placeholder }) => {
                   <CardText tag="h6">
                   </CardText>
                   </CardBody>
-                    <NavLink className='view-button' to={`/pokemonshow/${pokemonApi.id}`}>View</NavLink>
+                    <NavLink className='view-button' to={`/unprotectedshow/${pokemonApi.id}`}>View</NavLink>
                 </Card>
             )
           })}
