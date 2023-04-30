@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, NavLink, useNavigate } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
-const PokemonShowPage = ({ pokemons, deletePokemon, logged_in }) => {
+const PokemonShowPage = ({ deletePokemon, logged_in }) => {
 
     const { id } = useParams()
 

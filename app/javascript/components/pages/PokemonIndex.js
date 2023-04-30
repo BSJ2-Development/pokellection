@@ -4,7 +4,7 @@ import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 import SearchBar from '../components/SearchBar'
 import mockPokemon from '../mockPokemon'
 // const PokemonIndex = ({ pokemons, idApi, nameApi, imageApi }) => {
-const PokemonIndex = ({ allApiPokemons,Placeholder }) => {
+const PokemonIndex = ({ allApiPokemons, placeholder }) => {
 
   const navigate = useNavigate()
   
@@ -20,7 +20,7 @@ const PokemonIndex = ({ allApiPokemons,Placeholder }) => {
     
       <div className='unprotected-index-page'>
         <div className="App">
-          <SearchBar placeholder="Enter a Book Name..." data={allApiPokemons} />
+          <SearchBar placeholder="Enter a Pokemon Name..." data={allApiPokemons} />
         </div>
         <h1 className='index-header'>Pokemon Index</h1>
         <div className='index-cards'>
