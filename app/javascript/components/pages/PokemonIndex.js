@@ -1,10 +1,9 @@
 import React from 'react'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
-import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
+import { Card, CardBody, CardTitle, CardText } from 'reactstrap'
 import SearchBar from '../components/SearchBar'
-import mockPokemon from '../mockPokemon'
-// const PokemonIndex = ({ pokemons, idApi, nameApi, imageApi }) => {
-const PokemonIndex = ({ allApiPokemons, placeholder }) => {
+
+const PokemonIndex = ({ allApiPokemons }) => {
 
   const navigate = useNavigate()
   
