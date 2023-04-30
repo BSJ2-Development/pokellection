@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 import AboutUs from "./pages/AboutUs"
 import NotFound from "./pages/NotFound"
 import PokemonShowPage from "./pages/PokemonShowPage"
+import UnprotectedShowPage from "./pages/UnprotectedShowPage"
 import NewPokemon from './pages/NewPokemon'
 import PokemonUpdate from "./pages/PokemonUpdate"
 import SearchBar from "./components/SearchBar"
@@ -100,10 +101,10 @@ const App = (props) => {
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/pokemonindex' element={<PokemonIndex pokemons={pokemons} allApiPokemons={allApiPokemons} />} />
           <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} allApiPokemons={allApiPokemons}  {...props} deletePokemon={deletePokemon}/> } />
+          <Route path='/unprotectedshow/:id' element={<UnprotectedShowPage pokemons={pokemons} allApiPokemons={allApiPokemons}  {...props}/> } />
           <Route path="/pokemonupdate/:id" element={<PokemonUpdate pokemons={pokemons} updatePokemon={updatePokemon}/>} />
           <Route path='/pokemonnew' element={<NewPokemon createPokemons={createPokemons} current_user={props.current_user}/>} />
           <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
-          <Route path='pokemonshow/:id' element={<SearchBar pokemons={pokemons} allApiPokemons={allApiPokemons}/>} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
