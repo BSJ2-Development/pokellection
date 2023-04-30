@@ -2,11 +2,11 @@ import React from 'react'
 import { useParams, NavLink, useNavigate } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
-const PokemonShowPage = ({ deletePokemon, logged_in }) => {
+const PokemonShowPage = ({ deletePokemon, logged_in, allApiPokemons }) => {
 
     const { id } = useParams()
 
-    const selectedPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
+    const selectedPokemon = allApiPokemons?.find((apiPokemon) => apiPokemon.id === +id)
 
     const nav = useNavigate()
 
@@ -15,34 +15,34 @@ const PokemonShowPage = ({ deletePokemon, logged_in }) => {
       nav('/mycollection')
     }
 
-    
   return (
     <>
       {selectedPokemon && (
         <>
           <div className='show-page-background'>
-            <h1 className='show-pokemon-header'>{selectedPokemon.pokemon_name}</h1>
+            <h1 className='show-pokemon-header'>{selectedPokemon.name.toUpperCase()}</h1>
             <div className='show-card-container'>
-              <Card style={{width: '18rem'}} className='show-page-card'>
+              <Card 
+              style={{width: '18rem'}} 
+              className='show-page-card'
+              >
                 <CardTitle>
-                  No. {selectedPokemon.pokedex_entry}
+                  No. {selectedPokemon.id}
                 </CardTitle>
                 <img
-                alt={selectedPokemon.pokemon_name}
-                src={selectedPokemon.image}
+                alt={selectedPokemon.name}
+                src={selectedPokemon.sprites.other.dream_world.front_default}
                 />
                 <CardBody>
-                  <CardTitle tag="h5">
-                  {selectedPokemon.pokemon_name}
-                  </CardTitle>
                   <CardTitle>
-                    {selectedPokemon.pokemon_type} Type
+                    {selectedPokemon.types[0].type.name.toUpperCase()} TYPE
+                  </CardTitle> 
+                  <CardTitle tag="h5">
+                  {selectedPokemon.name.toUpperCase()}
                   </CardTitle>
+                  <br/>
                   <CardText tag="h5">
-                    Nickname: {selectedPokemon.pokemon_nickname}
-                  </CardText>
-                  <CardText tag="h5">
-                    HP: {selectedPokemon.hp}
+                    HP: {selectedPokemon.stats[0].base_stat}
                   </CardText>
                   <CardText tag="h5">
                     Height: {selectedPokemon.height} cm
@@ -51,11 +51,11 @@ const PokemonShowPage = ({ deletePokemon, logged_in }) => {
                     Weight: {selectedPokemon.weight} kg
                   </CardText>
                   <CardText tag="h5">
-                    Ability: {selectedPokemon.ability} 
+                    Special AP: {selectedPokemon.stats[3].base_stat} 
                   </CardText>
-                  <CardText tag="h5">
+                  {/* <CardText tag="h5">
                     Version: {selectedPokemon.pokemon_version}
-                  </CardText>
+                  </CardText> */}
                 </CardBody>
               </Card>
             </div> 
@@ -64,7 +64,7 @@ const PokemonShowPage = ({ deletePokemon, logged_in }) => {
                 <Button className='button'>
                   <NavLink to={`/pokemonupdate/${selectedPokemon?.id}`}>Update Pokemon</NavLink>
                 </Button>
-                <Button className='button' onClick={handleSubmit}>
+                <Button onClick={handleSubmit} className='button'>
                   <NavLink to="/mycollection">Delete Pokemon</NavLink>
                 </Button>
                 <Button className='button'>

@@ -753,75 +753,81 @@ label.form-label {
 .search{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: -50px;
+    margin-bottom: 75px;
 }
 
 .searchInputs {
     margin-top: 105px;
     display: flex;
     justify-content: center;
-  }
-  
-  .search input {
+}
+
+.search input {
     background-color: white;
-    border: 0;
-    border-radius: 2px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    font-size: 18px;
-    padding: 15px;
+    text-align: center;
+    font-size: 11px;
     height: 30px;
     width: 300px;
-  }
-  
-  .searchIcon {
-    height: 60px;
-    width: 50px;
-    background-color: white;
+    margin-top: 50px;
+    padding-top: 5px;
+    border-radius: 30px;
+    border: solid;
+    text-decoration: none;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
+}
+
+.searchIcon {
+    height: 30px;
+    width: 30px;
+    margin-top: 44px;
+    margin-right: 10px;
     display: grid;
     place-items: center;
-  }
-  
-  input:focus {
+    padding-top: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.input {
+    padding-left: 10px;
+}
+
+input:focus {
     outline: none;
-  }
-  .searchIcon svg {
+}
+.searchIcon svg {
     font-size: 35px;
-  }
-  
-  .dataResult {
-    margin-top: 5px;
-    width: 300px;
-    height: 200px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dataItem {
+    margin-left: 10px;
+    background-color: transparent opacity($color: #00000000);
+}
+
+.dataResult {
+    margin-top: 190px;
+    margin-left: 30px;
+    background-color: transparent opacity($color: #00000000);
+    font-size: 15px;
+    width: 220px;
+    height: 125px;
     overflow: hidden;
     overflow-y: auto;
-  }
-  
-  .dataResult::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .dataResult .dataItem {
+    cursor: pointer;
+    position: absolute;
+}
+
+.dataResult .dataItem {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     color: black;
-  }
-  
-  .dataItem p {
-    margin-left: 10px;
-  }
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    background-color: lightgrey;
-  }
-  
-  #clearBtn {
+}
+
+#clearBtn {
     cursor: pointer;
-  }
+}
