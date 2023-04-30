@@ -27,7 +27,47 @@
 body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    background-color:#eee1bc;
+}
+
+// devise pages
+
+.devise-pages {
+    padding-top: 120px;
+    height: 100vh;
+    background-image: url("./Sylveon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: contain;
+}
+
+.login-header {
+    margin-top: 500px;
+    // background-color: green;
+}
+
+.form-inputs-devise {
+    border-image: url("./TextBorder.png") 285 / 285px;
+    border-image-outset: 8px;
+    opacity: 85%;
+    background-color: #ccedf2;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 3px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+    text-align: center;
+    -webkit-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+    box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
 }
 
 .carousel-text {
@@ -35,6 +75,7 @@ body {
 }
 
 .home-page-background {
+    background-color: #eee1bc;
     background-image: url("./Eeveebg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -288,6 +329,28 @@ padding-top: 100px;
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+.pokeball-navbar-left {
+    height: 40px;
+    width: 40px;
+    margin-top: 9px;
+    margin-right: 70px;
+    border-radius: 90px;
+    -webkit-box-shadow: 11px 12px 13px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 12px 13px 3px rgba(0,0,0,0.75);
+    box-shadow: 11px 12px 13px 3px rgba(0,0,0,0.75);
+}
+
+.pokeball-navbar-right {
+    height: 40px;
+    width: 40px;
+    margin-top: 9px;
+    margin-left: 70px;
+    border-radius: 90px;
+    -webkit-box-shadow: 11px 12px 13px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 12px 13px 3px rgba(0,0,0,0.75);
+    box-shadow: 11px 12px 13px 3px rgba(0,0,0,0.75);
 }
     
 .header-buttons {
