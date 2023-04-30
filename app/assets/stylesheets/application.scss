@@ -832,71 +832,72 @@ input:focus {
     cursor: pointer;
 }
 
-.rock {
-  
-  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
-}
-.ghost {
- 
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-}
-.electric {
-  
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-}
-.bug {
-  
-  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
-}
-.poison {
-  
-  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
-}
-.normal {
- 
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-}
-.fairy {
- 
-  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-}
-.fire {
-  
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-}
+
+// Card Styles By Type
 .grass {
-  
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background-image: linear-gradient(45deg, #ccf766 0%, #72cd7e 100%);
 }
+
+.fire {
+  background-image: linear-gradient(45deg, #f6d365 0%, #ca360d 100%);
+}
+
 .water {
-  
-  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-}
-.ground {
-  
-background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+  background-image: linear-gradient(45deg, #a1f0f6 0%, #1874f4 100%);
 }
 
-.dragon {
-  background-color: lightcyan;
-}
-
-.fighting {
-  background-color: burlywood;
+.bug {
+  background-image: linear-gradient(45deg, #9fd6a3 0%, #da9740 100%);
 }
 
 .psychic {
-  background-color: white;
+  background-image: linear-gradient(45deg, #f3f3f3 0%, #ae6dcb 100%);
+}
+
+.ghost {
+  background-image: linear-gradient(45deg, #85b0cb 0%, #9f4ae4 100%);
+}
+
+.normal {
+  background-image: linear-gradient(45deg, #eeeeee 0%, #b8b8b8 100%);
+}
+
+.poison {
+  background-image: linear-gradient(45deg, #b8d2f6 0%, #ba4582 100%);
+}
+
+.fairy {
+  background-image: linear-gradient(45deg, #f6d7ec 0%, #ff9a9e 100%);
+}
+
+.rock {
+  background-image: linear-gradient(45deg, #aba09d 0%, #a66d5e 100%);
+}
+
+.electric {
+  background-image: linear-gradient(45deg, #fcec9b 0%, #f9a411 100%);
 }
 
 .ice {
-  background-color: lightblue;
+  background-image: linear-gradient(45deg, rgb(228, 250, 250) 0%, rgb(86, 158, 183) 100%);
+}
+
+.dragon {
+  background-image: linear-gradient(45deg, #609ef5 0%, #d77c05 100%);
+}
+
+.ground {
+  background-image: linear-gradient(45deg, #7e7158 0%, #643b31 100%);
+}
+
+.fighting {
+  background-image: linear-gradient(45deg, #d46b5a 0%, #43414d 100%);
 }
 
 .dark {
-  background-color: darkorchid;
+  background-image: linear-gradient(45deg, #5a5abf 0%, #7a269c 100%);
 }
 
 .steel {
-  background-color: darkolivegreen;
+  background-image: linear-gradient(45deg, #7d99b7 0%, #424750 100%);
 }
