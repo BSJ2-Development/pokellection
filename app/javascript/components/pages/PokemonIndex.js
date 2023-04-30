@@ -28,6 +28,7 @@ const PokemonIndex = ({ allApiPokemons, placeholder }) => {
         {allApiPokemons?.map((pokemonApi, index) => {
             return(
               <Card
+                className={pokemonApi.types[0].type.name}
                 key={index}
                 style={{width: '18rem'}}
                 >
