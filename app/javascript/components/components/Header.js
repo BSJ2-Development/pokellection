@@ -1,6 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Nav, NavItem } from 'reactstrap';
+import { NavLink } from "react-router-dom"
 
 const Header = ({
   logged_in, 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
+import { Button } from "reactstrap";
 
 const SearchBar = ({ placeholder, data, allApiPokemons }) => {
   const [filteredData, setFilteredData] = useState([]);
