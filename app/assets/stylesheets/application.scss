@@ -287,9 +287,9 @@ padding-top: 100px;
     margin-top: 50px;
     margin-bottom:50px ;
     background-color:#336E8C;
-    border-image: url("./TextBorder.png") 410 / 410px;
-    border-image-outset: 18px;
-    opacity: 85%;
+    border-image: url("./TextBorder.png") 340 / 410px;
+    border-image-outset: 21px;
+    opacity: 95%;
 
 }
 .dev-container-josh{
@@ -305,9 +305,9 @@ padding-top: 100px;
     margin-top: 50px;
     margin-bottom:50px ;
     background-color:#336E8C;
-    border-image: url("./TextBorder.png") 410 / 410px;
-    border-image-outset: 18px;
-    opacity: 85%;
+    border-image: url("./TextBorder.png") 390 / 395;
+    border-image-outset: 21px;
+    opacity: 95%;
 }
 
 .links-to-social{
@@ -492,7 +492,7 @@ a.home-page-button-text:hover {
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 1650vh;
+    height: 2700vh;
     padding-top: 30px;
 }
 
@@ -579,6 +579,39 @@ button.add-new-card:hover {
     align-items: center;
     align-content: stretch;
     padding: 15px;
+}
+
+.index-cards a {
+    border: solid;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-bottom: 8px;
+    width: 225px;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
+}
+
+.index-cards a:hover {
+    color: black;
+}
+
+.protected-index-cards a {
+    border: solid;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 225px;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
+}
+
+.protected-index-cards a:hover {
+    color: black;
 }
 
 .index-cards.card-body {
