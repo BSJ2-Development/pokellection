@@ -48,7 +48,7 @@ const SearchBar = ({ placeholder, data, allApiPokemons }) => {
         <div className="dataResult">
           {filteredData.slice(0, 15).map((value, key) => {
             return (
-              <NavLink className="dataItem" to={`/pokemonshow/${value.id}`}>
+              <NavLink className="dataItem" to={`/unprotectedshow/${value.id}`}>
                 <p>{value.name} </p>
               </NavLink>
             );

@@ -100,10 +100,11 @@ const App = (props) => {
           <Route path='/' element={<Home />} />
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/pokemonindex' element={<PokemonIndex pokemons={pokemons} allApiPokemons={allApiPokemons} />} />
-          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} allApiPokemons={allApiPokemons}  {...props} deletePokemon={deletePokemon}/> } />
+          <Route path='/pokemonshow/:id' element={<PokemonShowPage pokemons={pokemons} {...props} deletePokemon={deletePokemon}/> } />
           <Route path='/unprotectedshow/:id' element={<UnprotectedShowPage pokemons={pokemons} allApiPokemons={allApiPokemons}  {...props}/> } />
           <Route path="/pokemonupdate/:id" element={<PokemonUpdate pokemons={pokemons} updatePokemon={updatePokemon}/>} />
           <Route path='/pokemonnew' element={<NewPokemon createPokemons={createPokemons} current_user={props.current_user}/>} />
+          <Route path='/unprotectedshow/:id' element={<SearchBar pokemons={pokemons} allApiPokemons={allApiPokemons} /> } />
           <Route path='/mycollection' element={<ProtectedIndex pokemons={pokemons} current_user={props.current_user}/>} />
           <Route path='*' element={<NotFound />} />
         </Routes>
