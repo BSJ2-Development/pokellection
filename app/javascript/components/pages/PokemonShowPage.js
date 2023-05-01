@@ -2,11 +2,11 @@ import React from 'react'
 import { useParams, NavLink, useNavigate } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
 
-const PokemonShowPage = ({ deletePokemon, logged_in, allApiPokemons }) => {
+const PokemonShowPage = ({ deletePokemon, logged_in, pokemons }) => {
 
     const { id } = useParams()
 
-    const selectedPokemon = allApiPokemons?.find((apiPokemon) => apiPokemon.id === +id)
+    const selectedPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
 
     const nav = useNavigate()
 
@@ -20,30 +20,30 @@ const PokemonShowPage = ({ deletePokemon, logged_in, allApiPokemons }) => {
       {selectedPokemon && (
         <>
           <div className='show-page-background'>
-            <h1 className='show-pokemon-header'>{selectedPokemon.name.toUpperCase()}</h1>
+            <h1 className='show-pokemon-header'>{selectedPokemon.pokemon_name.toUpperCase()}</h1>
             <div className='show-card-container'>
               <Card 
               style={{width: '18rem'}} 
               // className='show-page-card'
-              className={selectedPokemon.types[0].type.name}
+              className={selectedPokemon.id}
               >
                 <CardTitle>
-                  No. {selectedPokemon.id}
+                  No. {selectedPokemon.pokedex_entry}
                 </CardTitle>
                 <img
-                alt={selectedPokemon.name}
-                src={selectedPokemon.sprites.other.dream_world.front_default}
+                alt={selectedPokemon.pokemon_name}
+                src={selectedPokemon.image}
                 />
                 <CardBody>
                   <CardTitle>
-                    {selectedPokemon.types[0].type.name.toUpperCase()} TYPE
+                    {selectedPokemon.pokemon_type.toUpperCase()} TYPE
                   </CardTitle> 
                   <CardTitle tag="h5">
-                  {selectedPokemon.name.toUpperCase()}
+                  {selectedPokemon.pokemon_name.toUpperCase()}
                   </CardTitle>
                   <br/>
                   <CardText tag="h5">
-                    HP: {selectedPokemon.stats[0].base_stat}
+                    HP: {selectedPokemon.hp}
                   </CardText>
                   <CardText tag="h5">
                     Height: {selectedPokemon.height} cm
@@ -52,7 +52,7 @@ const PokemonShowPage = ({ deletePokemon, logged_in, allApiPokemons }) => {
                     Weight: {selectedPokemon.weight} kg
                   </CardText>
                   <CardText tag="h5">
-                    Special AP: {selectedPokemon.stats[3].base_stat} 
+                    Ability {selectedPokemon.ability} 
                   </CardText>
                   {/* <CardText tag="h5">
                     Version: {selectedPokemon.pokemon_version}

@@ -4,19 +4,11 @@ import { Card, CardBody, CardTitle, CardText } from 'reactstrap'
 import SearchBar from '../components/SearchBar'
 
 const PokemonIndex = ({ allApiPokemons }) => {
-
-  const navigate = useNavigate()
   
   const { id } = useParams()
 
-  const navigateShow = () => {
-    navigate(`/unprotectedshow/${id}`)
-  }
   return (
     <>
-    
-    
-    
       <div className='unprotected-index-page'>
         <div className="App">
           <SearchBar placeholder="Enter a Pokemon Name..." data={allApiPokemons} />
@@ -24,7 +16,7 @@ const PokemonIndex = ({ allApiPokemons }) => {
         <h1 className='index-header'>Pokemon Index</h1>
         <div className='index-cards'>
           {/* <SearchBar /> */}
-        {allApiPokemons?.map((pokemonApi, index) => {
+        {allApiPokemons?.sort((a, b) => a.id - b.id).map((pokemonApi, index) => {
             return(
               <Card
                 className={pokemonApi.types[0].type.name}
@@ -37,7 +29,6 @@ const PokemonIndex = ({ allApiPokemons }) => {
                   <img
                   src={pokemonApi.sprites.other.dream_world.front_default}
                   alt={pokemonApi.name}
-                  onClick={navigateShow}
                   />
                 <CardBody>
                   <CardText>
