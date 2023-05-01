@@ -19,7 +19,6 @@ const PokemonShowPage = ({ allApiPokemons }) => {
             <div className='show-card-container'>
               <Card 
               style={{width: '18rem'}} 
-              // className='show-page-card'
               className={selectedPokemon.types[0].type.name}
               >
                 <CardTitle>
@@ -49,9 +48,6 @@ const PokemonShowPage = ({ allApiPokemons }) => {
                   <CardText tag="h5">
                     Special AP: {selectedPokemon.stats[3].base_stat} 
                   </CardText>
-                  {/* <CardText tag="h5">
-                    Version: {selectedPokemon.pokemon_version}
-                  </CardText> */}
                 </CardBody>
               </Card>
             </div> 

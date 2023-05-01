@@ -16,7 +16,6 @@ const PokemonIndex = ({ allApiPokemons }) => {
         </div>
         <h1 className='index-header'>Pokemon Index</h1>
         <div className='index-cards'>
-          {/* <SearchBar /> */}
         {allApiPokemons?.sort((a, b) => a.id - b.id).map((pokemonApi, index) => {
             return(
               <Card

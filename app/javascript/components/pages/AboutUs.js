@@ -11,8 +11,6 @@ import Jacobsfav from "../assets/Jacobsfav.png"
 import github from "../assets/github.png"
 import linkedin2 from "../assets/linkedin2.png"
 const AboutUs = () => {
-  
-  // TODO - add pictures and bio info(not all available yet).
   return (
     <>
     <div className='aboutus-page-background'>

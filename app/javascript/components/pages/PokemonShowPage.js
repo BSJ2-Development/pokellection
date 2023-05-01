@@ -24,7 +24,6 @@ const PokemonShowPage = ({ deletePokemon, logged_in, pokemons }) => {
             <div className='show-card-container'>
               <Card 
               style={{width: '18rem'}} 
-              // className='show-page-card'
               className={selectedPokemon.pokemon_type}
               >
                 <CardTitle>
@@ -54,9 +53,6 @@ const PokemonShowPage = ({ deletePokemon, logged_in, pokemons }) => {
                   <CardText tag="h5">
                     Ability {selectedPokemon.ability} 
                   </CardText>
-                  {/* <CardText tag="h5">
-                    Version: {selectedPokemon.pokemon_version}
-                  </CardText> */}
                 </CardBody>
               </Card>
             </div> 
