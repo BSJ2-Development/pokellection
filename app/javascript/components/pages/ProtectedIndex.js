@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
+import { Card, CardBody, CardTitle, CardText } from 'reactstrap'
 
 const ProtectedIndex = ({ pokemons, current_user }) => {
   const myPokemon = pokemons?.filter(
