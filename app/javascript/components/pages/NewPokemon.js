@@ -91,6 +91,9 @@ const NewPokemon = ({ current_user, createPokemons}) => {
                   type="select"
                   onChange={handleChange}
                 >
+                  <option value="">
+                  Add your Pokemon's type here
+                  </option>
                   <option value="grass">
                     grass
                   </option>
