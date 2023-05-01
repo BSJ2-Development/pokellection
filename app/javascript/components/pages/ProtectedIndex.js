@@ -10,9 +10,9 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
   return (
     <>
       <div className='protected-index-page'>
-        <h1 className='index-header'>My Pokemon</h1>
+        <h1 className='index-header'>My Pokemon Collection</h1>
           <button className='add-new-card'>
-            <NavLink to='/pokemonnew'>Add a New Card</NavLink>
+            <NavLink to='/pokemonnew'>Add a New Pokemon</NavLink>
           </button>
         <div className='protected-index-cards'>
           {myPokemon?.sort((a, b) => a.pokedex_entry - b.pokedex_entry).map((pokemon, index) => {
