@@ -85,12 +85,22 @@ const NewPokemon = ({ current_user, createPokemons}) => {
               Pokemon Type:
             </Label>
               <Input
-                id='pokemon_type'  
-                name="pokemon_type"
-                placeholder="Add your Pokemon's type here"
-                type="text"
-                onChange={handleChange}
-              />
+                  id='pokemon_type'  
+                  name="pokemon_type"
+                  placeholder="Add your Pokemon's type here"
+                  type="select"
+                  onChange={handleChange}
+                >
+                  <option value="grass">
+                    grass
+                  </option>
+                  <option value="fire">
+                    fire
+                  </option>
+                  <option value="water">
+                    water   
+                  </option>
+                </Input>
           </FormGroup>
 
           <FormGroup>

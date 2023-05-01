@@ -101,10 +101,20 @@ const PokemonUpdate = ({ pokemons, current_user, updatePokemon }) => {
                   id='pokemon_type'  
                   name="pokemon_type"
                   placeholder="Add your Pokemon's type here"
-                  type="text"
+                  type="select"
                   onChange={handleChange}
                   value={editPokemon.pokemon_type}
-                />
+                >
+                  <option value="grass">
+                    grass
+                  </option>
+                  <option value="fire">
+                    fire
+                  </option>
+                  <option value="water">
+                    water   
+                  </option>
+                </Input>
             </FormGroup>
 
             <FormGroup>

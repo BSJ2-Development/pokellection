@@ -7,6 +7,7 @@ const PokemonIndex = ({ allApiPokemons }) => {
   
   const { id } = useParams()
 
+
   return (
     <>
       <div className='unprotected-index-page'>
@@ -32,16 +33,16 @@ const PokemonIndex = ({ allApiPokemons }) => {
                   />
                 <CardBody>
                   <CardText>
-                  {pokemonApi.types[0].type.name.toUpperCase()} TYPE
+                    {pokemonApi.types[0].type.name.toUpperCase()} TYPE
                   </CardText>
                   <CardTitle tag="h5">
                     {pokemonApi.name.toUpperCase()}
                   </CardTitle>
                   <CardText tag="h6">
                   </CardText>
-                  </CardBody>
-                    <NavLink className={pokemonApi.types[0].type.name} to={`/unprotectedshow/${pokemonApi.id}`}>View</NavLink>
-                </Card>
+                </CardBody>
+                  <NavLink className={pokemonApi.types[0].type.name} to={`/unprotectedshow/${pokemonApi.id}`}>View</NavLink>
+              </Card>
             )
           })}
         </div>

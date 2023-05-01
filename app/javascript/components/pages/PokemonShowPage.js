@@ -25,7 +25,7 @@ const PokemonShowPage = ({ deletePokemon, logged_in, pokemons }) => {
               <Card 
               style={{width: '18rem'}} 
               // className='show-page-card'
-              className={selectedPokemon.id}
+              className={selectedPokemon.pokemon_type}
               >
                 <CardTitle>
                   No. {selectedPokemon.pokedex_entry}
