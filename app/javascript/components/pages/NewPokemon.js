@@ -194,7 +194,7 @@ const NewPokemon = ({ current_user, createPokemons}) => {
               <Input
                 id='ability'
                 name="ability"
-                placeholder="Add your Pokemon's name here"
+                placeholder="Add your Pokemon's ability here"
                 type="text"
                 onChange={handleChange}
               />
