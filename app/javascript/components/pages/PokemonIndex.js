@@ -12,11 +12,9 @@ const PokemonIndex = ({ allApiPokemons }) => {
   const navigateShow = () => {
     navigate(`/unprotectedshow/${id}`)
   }
+
   return (
     <>
-    
-    
-    
       <div className='unprotected-index-page'>
         <div className="App">
           <SearchBar placeholder="Enter a Pokemon Name..." data={allApiPokemons} />
@@ -40,17 +38,17 @@ const PokemonIndex = ({ allApiPokemons }) => {
                   onClick={navigateShow}
                   />
                 <CardBody>
-                  <CardText>
-                  {pokemonApi.types[0].type.name.toUpperCase()} TYPE
-                  </CardText>
-                  <CardTitle tag="h5">
-                    {pokemonApi.name.toUpperCase()}
-                  </CardTitle>
-                  <CardText tag="h6">
-                  </CardText>
-                  </CardBody>
-                    <NavLink className='view-button' to={`/unprotectedshow/${pokemonApi.id}`}>View</NavLink>
-                </Card>
+                <CardText>
+                {pokemonApi.types[0].type.name.toUpperCase()} TYPE
+                </CardText>
+                <CardTitle tag="h5">
+                  {pokemonApi.name.toUpperCase()}
+                </CardTitle>
+                <CardText tag="h6">
+                </CardText>
+                </CardBody>
+                  <NavLink className='view-button' to={`/unprotectedshow/${pokemonApi.id}`}>View</NavLink>
+              </Card>
             )
           })}
         </div>
