@@ -208,7 +208,7 @@ const PokemonUpdate = ({ pokemons, current_user, updatePokemon }) => {
                 <Input
                   id='ability'
                   name="ability"
-                  placeholder="Add your Pokemon's name here"
+                  placeholder="Add your Pokemon's ability here"
                   type="text"
                   onChange={handleChange}
                   value={editPokemon.ability}
