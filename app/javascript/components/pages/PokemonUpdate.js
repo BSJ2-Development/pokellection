@@ -114,6 +114,48 @@ const PokemonUpdate = ({ pokemons, current_user, updatePokemon }) => {
                   <option value="water">
                     water   
                   </option>
+                  <option value="bug">
+                    bug   
+                  </option>
+                  <option value="psychic">
+                    psychic   
+                  </option>
+                  <option value="ghost">
+                    ghost   
+                  </option>
+                  <option value="normal">
+                    normal   
+                  </option>
+                  <option value="poison">
+                    poison   
+                  </option>
+                  <option value="fairy">
+                    fairy   
+                  </option>
+                  <option value="rock">
+                    rock   
+                  </option>
+                  <option value="electric">
+                    electric   
+                  </option>
+                  <option value="ice">
+                    ice   
+                  </option>
+                  <option value="dragon">
+                    dragon   
+                  </option>
+                  <option value="ground">
+                    ground   
+                  </option>
+                  <option value="fighting">
+                    fighting   
+                  </option>
+                  <option value="dark">
+                    dark   
+                  </option>
+                  <option value="steel">
+                    steel   
+                  </option>
                 </Input>
             </FormGroup>
 
