@@ -6,7 +6,7 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
   const myPokemon = pokemons?.filter(
     (pokemon) => current_user?.id === pokemon.user_id
   )
-
+  
   return (
     <>
       <div className='protected-index-page'>
@@ -41,7 +41,7 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
                   </CardText>
                 </CardBody>
                 <CardBody>
-                    <NavLink border-inlin className={pokemon.pokemon_type} to={`/pokemonshow/${pokemon.id}`}>View</NavLink>
+                    <NavLink className='view-button' to={`/pokemonshow/${pokemon.id}`}>View</NavLink>
                 </CardBody>
               </Card>
             )

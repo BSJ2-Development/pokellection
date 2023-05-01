@@ -41,7 +41,7 @@ const PokemonIndex = ({ allApiPokemons }) => {
                 <CardText tag="h6">
                 </CardText>
                 </CardBody>
-                  <NavLink className={pokemonApi.types[0].type.name} to={`/unprotectedshow/${pokemonApi.id}`}>View</NavLink>
+                  <NavLink className='view-button' to={`/unprotectedshow/${pokemonApi.id}`}>View</NavLink>
               </Card>
             )
           })}
