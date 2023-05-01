@@ -78,7 +78,7 @@ const Home = ()  => {
           </Carousel>
           <div className='homepage_description'> 
             <p>
-            With Pokellection, you can manage your entire collection of Pokemon across all platforms. From the video games, to the card game or even the action figures you have on your shelf. By creating new cards for each Pokemon within your collection, you can add to the Pokellection Pokedex for everyone to see. When you log in, you can enjoy checking out the cards that everyone has contributed, but you can only modify the listings that you have added yourself.
+            With Pokellection, you can manage your entire collection of Pokemon across all platforms. From the video games, to the card game or even the action figures you have on your shelf. You are able to create a personal database based on all of your other pokemon collections and collectibles. 
             </p> 
         </div>
       </div>
