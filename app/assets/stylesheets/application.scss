@@ -44,7 +44,6 @@ body {
 
 .login-header {
     margin-top: 500px;
-    // background-color: green;
 }
 
 .form-inputs-devise {
@@ -68,6 +67,10 @@ body {
     -webkit-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
     box-shadow: 9px 18px 40px 21px rgba(0,0,0,0.75);
+}
+
+.field {
+    padding-bottom: 4px;
 }
 
 .carousel-text {
@@ -220,12 +223,14 @@ padding-top: 100px;
 .linked-in-right {
     max-height: 50px;
     max-width: 50px;
+    margin-top: 4px;
 }
 
 .about-me-images-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: black;
 }
 
 .brandon-self-image {
@@ -287,9 +292,9 @@ padding-top: 100px;
     margin-top: 50px;
     margin-bottom:50px ;
     background-color:#336E8C;
-    border-image: url("./TextBorder.png") 410 / 410px;
-    border-image-outset: 18px;
-    opacity: 85%;
+    border-image: url("./TextBorder.png") 390 /160;
+    border-image-outset: 19px;
+    opacity: 96%;
 
 }
 .dev-container-josh{
@@ -307,10 +312,10 @@ padding-top: 100px;
     background-color:#336E8C;
     border-image: url("./TextBorder.png") 410 / 410px;
     border-image-outset: 18px;
-    opacity: 85%;
+    opacity: 96%;
 }
 
-.links-to-social{
+.links-to-social {
     display: flex;
     justify-content: center;
 }
@@ -492,7 +497,7 @@ a.home-page-button-text:hover {
     background-position: center center;
     background-attachment: fixed;
     object-fit: contain;
-    height: 1650vh;
+    height: 2700vh;
     padding-top: 30px;
 }
 
@@ -608,32 +613,35 @@ button.add-new-card:hover {
     padding: 20px;
 }
 
-.view-button{
-    align-self: center;
-    background-color: #2ed897;
+.index-cards a {
     border: solid;
-    width: 100px;
-    height: 30px;
-    border-color: #342316;
-    text-align: center ;
-    padding-top: 5px;
     border-radius: 30px;
-    text-decoration: none;
+    align-self: center;
+    width: 220px;
+    margin-bottom: 8px;
     -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
     -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
-    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77); 
-    padding: 2px 5px;
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
 }
 
-.view-button a {
+.index-cards a:hover {
     color: black;
 }
 
-.view-button a:hover {
-    color:rgb(27, 130, 74);
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 5px;
+.protected-index-cards a {
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-radius: 30px;
+    align-self: center;
+    width: 220px;
+    -webkit-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+    box-shadow: 22px 14px 9px -2px rgba(0,0,0,0.77);
+}
+
+.protected-index-cards a:hover {
+    color: black;
 }
 
 .pokemon-image {
@@ -785,7 +793,6 @@ label.form-label {
 // create page
 
 .new-pokemon-page {
-    padding-top: 100px;
     background-image: url("./Flareon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
