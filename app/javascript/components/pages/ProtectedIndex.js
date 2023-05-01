@@ -15,7 +15,7 @@ const ProtectedIndex = ({ pokemons, current_user }) => {
             <NavLink to='/pokemonnew'>Add a New Card</NavLink>
           </button>
         <div className='protected-index-cards'>
-          {myPokemon?.map((pokemon, index) => {
+          {myPokemon?.sort((a, b) => a.pokedex_entry - b.pokedex_entry).map((pokemon, index) => {
             return(
               <Card
                 className={pokemon.pokemon_type}
